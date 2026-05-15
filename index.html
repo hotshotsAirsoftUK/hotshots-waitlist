@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotshots Airsoft — Join the Waitlist</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0a0a0a;
+      --dark:     #111111;
+      --card:     #1a1a1a;
+      --border:   #2a2a2a;
+      --green:    #4a7c3f;
+      --green-lt: #5c9e50;
+      --amber:    #c8973a;
+      --white:    #f0ece4;
+      --muted:    #888880;
+      --radius:   4px;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--green);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 18px; color: #fff; letter-spacing: -1px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-size: 15px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--white);
+    }
+
+    .logo-sub {
+      font-size: 11px; letter-spacing: 1px; color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(74, 124, 63, 0.15);
+      border: 1px solid var(--green);
+      color: var(--green-lt);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+
+    h1 span { color: var(--amber); }
+
+    .hero p {
+      font-size: 17px;
+      color: #b8b4ac;
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    /* ── PROOF POINTS ── */
+    .proof {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-bottom: 52px;
+    }
+
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .proof-dot {
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── FORM CARD ── */
+    .form-card {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 36px 32px 40px;
+    }
+
+    .form-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .form-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    /* ── SEGMENT TOGGLE ── */
+    .segment-toggle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .segment-toggle input[type="radio"] { display: none; }
+
+    .segment-toggle label {
+      padding: 11px 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      cursor: pointer;
+      background: transparent;
+      transition: all 0.15s;
+    }
+
+    .segment-toggle label:first-of-type { border-right: 1px solid var(--border); }
+
+    .segment-toggle input[type="radio"]:checked + label {
+      background: var(--green);
+      color: #fff;
+    }
+
+    /* ── FIELDS ── */
+    .field-group {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .field { display: flex; flex-direction: column; gap: 6px; }
+
+    label.field-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    label.field-label span { color: var(--amber); }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      background: var(--black);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--white);
+      font-size: 15px;
+      font-family: inherit;
+      padding: 11px 14px;
+      width: 100%;
+      transition: border-color 0.15s;
+      -webkit-appearance: none;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder { color: #444; }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    select option { background: var(--dark); }
+
+    .conditional { display: none; }
+    .conditional.visible { display: grid; }
+
+    /* ── GDPR CONSENT ── */
+    .consent-block {
+      margin-top: 20px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .consent-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      margin-top: 2px;
+      accent-color: var(--green);
+      cursor: pointer;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+    }
+
+    .consent-text {
+      font-size: 13px;
+      color: #b8b4ac;
+      line-height: 1.6;
+    }
+
+    .consent-text a {
+      color: var(--green-lt);
+      text-decoration: underline;
+    }
+
+    .consent-text a:hover { color: var(--amber); }
+
+    .consent-error {
+      display: none;
+      font-size: 12px;
+      color: #e05555;
+      margin-top: 8px;
+    }
+
+    .consent-error.visible { display: block; }
+
+    .data-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 12px;
+      line-height: 1.6;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .data-note a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+
+    /* ── SUBMIT ── */
+    .submit-wrap { margin-top: 20px; }
+
+    button[type="submit"] {
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 14px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    button[type="submit"]:hover { background: var(--green-lt); }
+    button[type="submit"]:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    /* ── SUCCESS STATE ── */
+    .success-state {
+      display: none;
+      text-align: center;
+      padding: 20px 0 8px;
+    }
+
+    .success-icon {
+      width: 52px; height: 52px;
+      background: rgba(74, 124, 63, 0.15);
+      border: 1px solid var(--green);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 22px;
+    }
+
+    .success-state h3 { font-size: 20px; margin-bottom: 10px; }
+    .success-state p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .success-state a { color: var(--green-lt); }
+
+    /* ── WHAT TO EXPECT ── */
+    .what-to-expect {
+      max-width: 520px;
+      margin: 40px auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .expect-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    .expect-icon { font-size: 22px; margin-bottom: 10px; }
+    .expect-title { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
+    .expect-text { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+      line-height: 1.8;
+    }
+
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 520px) {
+      .form-card { padding: 28px 20px 32px; }
+      .field-row { grid-template-columns: 1fr; }
+      .what-to-expect { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-mark">HS</div>
+    <div>
+      <div class="logo-text">Hotshots Airsoft</div>
+      <div class="logo-sub">London · Mobile Range</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge">Coming Soon · London</div>
+    <h1>The Range<br>Comes to <span>You.</span></h1>
+    <p>A military-instructor-led airsoft experience, fully mobile and self-contained. Corporate events, stag dos, group occasions. You provide the space — we bring everything else.</p>
+
+    <div class="proof">
+      <div class="proof-item"><div class="proof-dot"></div>British Army Skill at Arms Instructor</div>
+      <div class="proof-item"><div class="proof-dot"></div>AttackSense Digital Scoring</div>
+      <div class="proof-item"><div class="proof-dot"></div>Setup Under 1 Hour</div>
+      <div class="proof-item"><div class="proof-dot"></div>Full Equipment Provided</div>
+    </div>
+  </section>
+
+  <!-- FORM CARD -->
+  <div class="form-card" id="formCard">
+
+    <div class="form-title">Get Early Access</div>
+    <div class="form-subtitle">Be first to know when we launch. One email when bookings open — nothing else.</div>
+
+    <!-- SEGMENT TOGGLE -->
+    <div class="segment-toggle">
+      <input type="radio" name="segment_toggle" id="seg_corporate" value="Corporate" />
+      <label for="seg_corporate">Corporate Event</label>
+      <input type="radio" name="segment_toggle" id="seg_consumer" value="Consumer" />
+      <label for="seg_consumer">Group / Personal</label>
+    </div>
+
+    <form id="waitlistForm" action="https://formspree.io/f/xzdolnwn" method="POST">
+
+      <input type="hidden" name="segment" id="segmentHidden" value="" />
+
+      <!-- Common fields -->
+      <div class="field-group">
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="firstName">First Name <span>*</span></label>
+            <input type="text" id="firstName" name="first_name" placeholder="Jane" required />
+          </div>
+          <div class="field">
+            <label class="field-label" for="lastName">Last Name <span>*</span></label>
+            <input type="text" id="lastName" name="last_name" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="field-label" for="email">Email Address <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+        </div>
+      </div>
+
+      <!-- CORPORATE fields -->
+      <div class="field-group conditional" id="corporateFields">
+        <div class="field">
+          <label class="field-label" for="company">Company Name <span>*</span></label>
+          <input type="text" id="company" name="company_name" placeholder="Acme Ltd" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="job_title" placeholder="Events Manager" />
+          </div>
+          <div class="field">
+            <label class="field-label" for="corpGroupSize">Approx. Group Size</label>
+            <select id="corpGroupSize" name="group_size">
+              <option value="" disabled selected>Select…</option>
+              <option>Up to 10</option>
+              <option>11 – 20</option>
+              <option>21 – 50</option>
+              <option>50+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field-label" for="eventFreq">How often do you run team events?</label>
+          <select id="eventFreq" name="event_frequency">
+            <option value="" disabled selected>Select…</option>
+            <option>Once a year</option>
+            <option>2–3 times a year</option>
+            <option>Quarterly</option>
+            <option>Monthly or more</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- CONSUMER fields -->
+      <div class="field-group conditional" id="consumerFields">
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="eventType">Event Type</label>
+            <select id="eventType" name="event_type">
+              <option value="" disabled selected>Select…</option>
+              <option>Stag Do</option>
+              <option>Hen Do</option>
+              <option>Birthday</option>
+              <option>Sports Club / Team Social</option>
+              <option>University Society</option>
+              <option>Other Group Event</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field-label" for="consGroupSize">Approx. Group Size</label>
+            <select id="consGroupSize" name="group_size">
+              <option value="" disabled selected>Select…</option>
+              <option>Up to 6</option>
+              <option>7 – 12</option>
+              <option>13 – 20</option>
+              <option>20+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- How did you hear -->
+      <div class="field-group" style="margin-top:4px;">
+        <div class="field">
+          <label class="field-label" for="source">How did you hear about us?</label>
+          <select id="source" name="source">
+            <option value="" disabled selected>Select…</option>
+            <option>LinkedIn</option>
+            <option>Instagram / TikTok</option>
+            <option>Tagvenue</option>
+            <option>Poptop</option>
+            <option>StagWeb</option>
+            <option>Word of mouth</option>
+            <option>Google search</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ── GDPR CONSENT BLOCK ── -->
+      <div class="consent-block">
+        <div class="consent-row">
+          <input type="checkbox" id="marketingConsent" name="marketing_consent" value="yes" required />
+          <label class="consent-text" for="marketingConsent">
+            I agree to receive email updates from Hotshots Airsoft Ltd about our launch and when bookings become available. I understand I can withdraw this consent at any time by emailing <a href="mailto:hotshots.airsoftuk@gmail.com">hotshots.airsoftuk@gmail.com</a>. <span style="color: var(--amber);">*</span>
+          </label>
+        </div>
+        <div class="consent-error" id="consentError">You must tick this box to join the waitlist.</div>
+
+        <div class="data-note">
+          Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) solely for the purpose of notifying you when bookings open. We do not sell or share your data with third parties for marketing. Data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> as our form processor. For full details on how we handle your data, your rights, and how to request deletion, see our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+        </div>
+      </div>
+
+      <div class="submit-wrap">
+        <button type="submit" id="submitBtn">Join the Waitlist</button>
+      </div>
+
+    </form>
+
+    <!-- SUCCESS STATE -->
+    <div class="success-state" id="successState">
+      <div class="success-icon">✓</div>
+      <h3>You're on the list.</h3>
+      <p>We'll be in touch when bookings open.<br><br>
+      To request deletion of your data at any time, email<br>
+      <a href="mailto:hotshots.airsoftuk@gmail.com">hotshots.airsoftuk@gmail.com</a>.</p>
+    </div>
+
+  </div>
+
+  <!-- WHAT TO EXPECT -->
+  <div class="what-to-expect">
+    <div class="expect-card">
+      <div class="expect-icon">🎯</div>
+      <div class="expect-title">Military-Led</div>
+      <div class="expect-text">Qualified British Army Skill at Arms Instructor runs every session.</div>
+    </div>
+    <div class="expect-card">
+      <div class="expect-icon">🚐</div>
+      <div class="expect-title">Fully Mobile</div>
+      <div class="expect-text">We come to you. Office car park, outdoor space, event venue — your call.</div>
+    </div>
+    <div class="expect-card">
+      <div class="expect-icon">📊</div>
+      <div class="expect-title">Live Scoring</div>
+      <div class="expect-text">AttackSense digital targets with a real-time leaderboard for every session.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Hotshots Airsoft Ltd · Registered in Eng
