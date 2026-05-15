@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- saved from url=(0104)file:///C:/Users/kay_m/.claude/sessions/claude_cowork/02_projects/mobile_airsoft_range/drafts/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotshots Airsoft — Join the Waitlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black:    #0a0a0a;
-      --dark:     #111111;
-      --card:     #1a1a1a;
-      --border:   #2a2a2a;
-      --green:    #4a7c3f;
-      --green-lt: #5c9e50;
-      --amber:    #c8973a;
-      --white:    #f0ece4;
-      --muted:    #888880;
-      --radius:   4px;
+      /* ── HOTSHOTS BRAND PALETTE v1.0 ── */
+      --olive:        #3D4A2E;  /* Olive Drab Green — primary */
+      --olive-dim:    #2C361F;  /* Olive Drab Dark — hover */
+      --olive-glow:   rgba(61,74,46,0.15);
+      --earth:        #8B7355;  /* Flat Dark Earth — secondary */
+      --midnight:     #1A1A1A;  /* Midnight Black */
+      --amber:        #C8860A;  /* Amber Gold — 5% accent max */
+      --brass:        #E8A820;  /* Brass Light */
+      --smoke:        #F5F3EE;  /* Smoke White */
+      --ash:          #9A9A8A;  /* Ash Grey */
+      /* ── DERIVED UI ── */
+      --black:   #0D0F0A;      /* Page base — near-black, olive warmth */
+      --dark:    #131510;
+      --card:    #1B1F17;      /* Card — dark olive tint */
+      --card2:   #20241B;      /* Card alt */
+      --border:  #2D3325;      /* Border — olive-tinted */
+      --green:   #3D4A2E;      /* → olive */
+      --green-lt:#8B7355;      /* → earth */
+      --white:   #F5F3EE;      /* → smoke */
+      --muted:   #9A9A8A;      /* → ash */
+      --radius:  2px;          /* Military: sharp corners */
     }
 
     body {
       background: var(--black);
       color: var(--white);
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Barlow', Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
       min-height: 100vh;
@@ -32,7 +46,7 @@
     /* ── HEADER ── */
     header {
       border-bottom: 1px solid var(--border);
-      padding: 20px 24px;
+      padding: 18px 24px;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -40,20 +54,24 @@
 
     .logo-mark {
       width: 36px; height: 36px;
-      background: var(--green);
-      border-radius: var(--radius);
+      background: var(--olive);
+      border: 1px solid rgba(200,134,10,0.4);
+      border-radius: 2px;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 900; font-size: 18px; color: #fff; letter-spacing: -1px;
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 17px; color: var(--smoke); letter-spacing: 1px;
       flex-shrink: 0;
     }
 
     .logo-text {
-      font-size: 15px; font-weight: 700; letter-spacing: 2px;
-      text-transform: uppercase; color: var(--white);
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 18px; font-weight: 400; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--smoke);
     }
 
     .logo-sub {
-      font-size: 11px; letter-spacing: 1px; color: var(--muted);
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 10px; letter-spacing: 2px; color: var(--ash);
       text-transform: uppercase;
     }
 
@@ -61,18 +79,35 @@
     .hero {
       max-width: 680px;
       margin: 0 auto;
-      padding: 64px 24px 48px;
+      padding: 72px 24px 52px;
       text-align: center;
+      position: relative;
+    }
+    /* Operational lines texture — brand guidelines §09 */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        30deg,
+        rgba(61,74,46,0.06) 0px,
+        rgba(61,74,46,0.06) 1px,
+        transparent 1px,
+        transparent 28px
+      );
+      pointer-events: none;
+      border-radius: 0;
     }
 
     .badge {
       display: inline-block;
-      background: rgba(74, 124, 63, 0.15);
-      border: 1px solid var(--green);
-      color: var(--green-lt);
+      background: rgba(200, 134, 10, 0.1);
+      border: 1px solid var(--amber);
+      color: var(--amber);
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       text-transform: uppercase;
       padding: 5px 14px;
       border-radius: 2px;
@@ -80,21 +115,25 @@
     }
 
     h1 {
-      font-size: clamp(28px, 5vw, 44px);
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.5px;
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: clamp(44px, 8vw, 72px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: 4px;
+      text-transform: uppercase;
       margin-bottom: 20px;
     }
 
     h1 span { color: var(--amber); }
 
     .hero p {
+      font-family: 'Barlow', Arial, sans-serif;
       font-size: 17px;
-      color: #b8b4ac;
+      color: var(--ash);
       max-width: 520px;
       margin: 0 auto 40px;
       line-height: 1.7;
+      font-weight: 300;
     }
 
     /* ── PROOF POINTS ── */
@@ -109,16 +148,21 @@
     .proof-item {
       display: flex;
       align-items: center;
-      gap: 7px;
-      font-size: 13px;
-      color: var(--muted);
+      gap: 8px;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ash);
     }
 
     .proof-dot {
-      width: 6px; height: 6px;
-      background: var(--green);
-      border-radius: 50%;
+      width: 5px; height: 5px;
+      background: var(--amber);
+      border-radius: 0;
       flex-shrink: 0;
+      transform: rotate(45deg);
     }
 
     /* ── FORM CARD ── */
@@ -127,20 +171,27 @@
       margin: 0 auto;
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 6px;
+      border-top: 2px solid var(--olive);
+      border-radius: 2px;
       padding: 36px 32px 40px;
     }
 
     .form-title {
-      font-size: 18px;
-      font-weight: 700;
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--smoke);
       margin-bottom: 6px;
     }
 
     .form-subtitle {
+      font-family: 'Barlow', Arial, sans-serif;
       font-size: 13px;
-      color: var(--muted);
+      color: var(--ash);
       margin-bottom: 28px;
+      letter-spacing: 0.2px;
     }
 
     /* ── SEGMENT TOGGLE ── */
@@ -158,10 +209,12 @@
     .segment-toggle label {
       padding: 11px 0;
       text-align: center;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      color: var(--muted);
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--ash);
       cursor: pointer;
       background: transparent;
       transition: all 0.15s;
@@ -170,8 +223,9 @@
     .segment-toggle label:first-of-type { border-right: 1px solid var(--border); }
 
     .segment-toggle input[type="radio"]:checked + label {
-      background: var(--green);
-      color: #fff;
+      background: var(--olive);
+      color: var(--smoke);
+      letter-spacing: 1.5px;
     }
 
     /* ── FIELDS ── */
@@ -186,11 +240,12 @@
     .field { display: flex; flex-direction: column; gap: 6px; }
 
     label.field-label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--ash);
     }
 
     label.field-label span { color: var(--amber); }
@@ -198,12 +253,12 @@
     input[type="text"],
     input[type="email"],
     select {
-      background: var(--black);
+      background: var(--dark);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      color: var(--white);
+      border-radius: 2px;
+      color: var(--smoke);
+      font-family: 'Barlow', Arial, sans-serif;
       font-size: 15px;
-      font-family: inherit;
       padding: 11px 14px;
       width: 100%;
       transition: border-color 0.15s;
@@ -211,13 +266,13 @@
     }
 
     input[type="text"]::placeholder,
-    input[type="email"]::placeholder { color: #444; }
+    input[type="email"]::placeholder { color: #3A3D35; }
 
     input[type="text"]:focus,
     input[type="email"]:focus,
     select:focus {
       outline: none;
-      border-color: var(--green);
+      border-color: var(--olive);
     }
 
     select {
@@ -238,8 +293,9 @@
       margin-top: 20px;
       padding: 16px;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.02);
+      border-left: 2px solid var(--amber);
+      border-radius: 2px;
+      background: rgba(200,134,10,0.04);
     }
 
     .consent-row {
@@ -300,20 +356,22 @@
 
     button[type="submit"] {
       width: 100%;
-      background: var(--green);
-      color: #fff;
+      background: var(--olive);
+      color: var(--smoke);
       border: none;
-      border-radius: var(--radius);
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      border-radius: 2px;
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      padding: 14px;
+      padding: 15px;
       cursor: pointer;
-      transition: background 0.15s;
+      transition: background 0.15s, border-color 0.15s;
+      border-bottom: 2px solid var(--amber);
     }
 
-    button[type="submit"]:hover { background: var(--green-lt); }
+    button[type="submit"]:hover { background: var(--olive-dim); }
     button[type="submit"]:disabled { opacity: 0.6; cursor: not-allowed; }
 
     /* ── SUCCESS STATE ── */
@@ -333,7 +391,7 @@
       font-size: 22px;
     }
 
-    .success-state h3 { font-size: 20px; margin-bottom: 10px; }
+    .success-state h3 { font-family: 'Bebas Neue', Arial, sans-serif; font-size: 28px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
     .success-state p { font-size: 14px; color: var(--muted); line-height: 1.6; }
     .success-state a { color: var(--green-lt); }
 
@@ -349,21 +407,24 @@
     .expect-card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-top: 2px solid var(--olive);
+      border-radius: 2px;
       padding: 20px 16px;
       text-align: center;
     }
 
     .expect-icon { font-size: 22px; margin-bottom: 10px; }
-    .expect-title { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
+    .expect-title { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
     .expect-text { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
     /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 40px 24px;
+      font-family: 'Barlow', Arial, sans-serif;
       font-size: 12px;
-      color: var(--muted);
+      letter-spacing: 0.5px;
+      color: var(--ash);
       border-top: 1px solid var(--border);
       margin-top: 60px;
       line-height: 1.8;
@@ -383,7 +444,7 @@
 
   <!-- HEADER -->
   <header>
-    <div class="logo-mark">HS</div>
+    <div class="logo-mark">HA</div>
     <div>
       <div class="logo-text">Hotshots Airsoft</div>
       <div class="logo-sub">London · Mobile Range</div>
@@ -412,31 +473,31 @@
 
     <!-- SEGMENT TOGGLE -->
     <div class="segment-toggle">
-      <input type="radio" name="segment_toggle" id="seg_corporate" value="Corporate" />
+      <input type="radio" name="segment_toggle" id="seg_corporate" value="Corporate">
       <label for="seg_corporate">Corporate Event</label>
-      <input type="radio" name="segment_toggle" id="seg_consumer" value="Consumer" />
+      <input type="radio" name="segment_toggle" id="seg_consumer" value="Consumer">
       <label for="seg_consumer">Group / Personal</label>
     </div>
 
     <form id="waitlistForm" action="https://formspree.io/f/xzdolnwn" method="POST">
 
-      <input type="hidden" name="segment" id="segmentHidden" value="" />
+      <input type="hidden" name="segment" id="segmentHidden" value="">
 
       <!-- Common fields -->
       <div class="field-group">
         <div class="field-row">
           <div class="field">
             <label class="field-label" for="firstName">First Name <span>*</span></label>
-            <input type="text" id="firstName" name="first_name" placeholder="Jane" required />
+            <input type="text" id="firstName" name="first_name" placeholder="Jane" required="">
           </div>
           <div class="field">
             <label class="field-label" for="lastName">Last Name <span>*</span></label>
-            <input type="text" id="lastName" name="last_name" placeholder="Smith" required />
+            <input type="text" id="lastName" name="last_name" placeholder="Smith" required="">
           </div>
         </div>
         <div class="field">
           <label class="field-label" for="email">Email Address <span>*</span></label>
-          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required="">
         </div>
       </div>
 
@@ -444,17 +505,17 @@
       <div class="field-group conditional" id="corporateFields">
         <div class="field">
           <label class="field-label" for="company">Company Name <span>*</span></label>
-          <input type="text" id="company" name="company_name" placeholder="Acme Ltd" />
+          <input type="text" id="company" name="company_name" placeholder="Acme Ltd">
         </div>
         <div class="field-row">
           <div class="field">
             <label class="field-label" for="jobTitle">Job Title</label>
-            <input type="text" id="jobTitle" name="job_title" placeholder="Events Manager" />
+            <input type="text" id="jobTitle" name="job_title" placeholder="Events Manager">
           </div>
           <div class="field">
             <label class="field-label" for="corpGroupSize">Approx. Group Size</label>
             <select id="corpGroupSize" name="group_size">
-              <option value="" disabled selected>Select…</option>
+              <option value="" disabled="" selected="">Select…</option>
               <option>Up to 10</option>
               <option>11 – 20</option>
               <option>21 – 50</option>
@@ -465,7 +526,7 @@
         <div class="field">
           <label class="field-label" for="eventFreq">How often do you run team events?</label>
           <select id="eventFreq" name="event_frequency">
-            <option value="" disabled selected>Select…</option>
+            <option value="" disabled="" selected="">Select…</option>
             <option>Once a year</option>
             <option>2–3 times a year</option>
             <option>Quarterly</option>
@@ -480,7 +541,7 @@
           <div class="field">
             <label class="field-label" for="eventType">Event Type</label>
             <select id="eventType" name="event_type">
-              <option value="" disabled selected>Select…</option>
+              <option value="" disabled="" selected="">Select…</option>
               <option>Stag Do</option>
               <option>Hen Do</option>
               <option>Birthday</option>
@@ -492,7 +553,7 @@
           <div class="field">
             <label class="field-label" for="consGroupSize">Approx. Group Size</label>
             <select id="consGroupSize" name="group_size">
-              <option value="" disabled selected>Select…</option>
+              <option value="" disabled="" selected="">Select…</option>
               <option>Up to 6</option>
               <option>7 – 12</option>
               <option>13 – 20</option>
@@ -507,7 +568,7 @@
         <div class="field">
           <label class="field-label" for="source">How did you hear about us?</label>
           <select id="source" name="source">
-            <option value="" disabled selected>Select…</option>
+            <option value="" disabled="" selected="">Select…</option>
             <option>LinkedIn</option>
             <option>Instagram / TikTok</option>
             <option>Tagvenue</option>
@@ -523,7 +584,7 @@
       <!-- ── GDPR CONSENT BLOCK ── -->
       <div class="consent-block">
         <div class="consent-row">
-          <input type="checkbox" id="marketingConsent" name="marketing_consent" value="yes" required />
+          <input type="checkbox" id="marketingConsent" name="marketing_consent" value="yes" required="">
           <label class="consent-text" for="marketingConsent">
             I agree to receive email updates from Hotshots Airsoft Ltd about our launch and when bookings become available. I understand I can withdraw this consent at any time by emailing <a href="mailto:hotshots.airsoftuk@gmail.com">hotshots.airsoftuk@gmail.com</a>. <span style="color: var(--amber);">*</span>
           </label>
@@ -531,7 +592,7 @@
         <div class="consent-error" id="consentError">You must tick this box to join the waitlist.</div>
 
         <div class="data-note">
-          Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) solely for the purpose of notifying you when bookings open. We do not sell or share your data with third parties for marketing. Data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> as our form processor. For full details on how we handle your data, your rights, and how to request deletion, see our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+          Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) solely for the purpose of notifying you when bookings open. We do not sell or share your data with third parties for marketing. Data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> as our form processor. For full details on how we handle your data, your rights, and how to request deletion, see our <a href="file:///C:/Users/kay_m/.claude/sessions/claude_cowork/02_projects/mobile_airsoft_range/drafts/privacy-policy.html" target="_blank">Privacy Policy</a>.
         </div>
       </div>
 
@@ -572,4 +633,4 @@
   </div>
 
   <footer>
-    <p>Hotshots Airsoft Ltd · Registered in Eng
+    <p>Hotshots Airsoft Ltd · Registered in Eng</p></footer></body></html>
