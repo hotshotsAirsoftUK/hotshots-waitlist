@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotshots Airsoft — Market Research Survey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* ── HOTSHOTS BRAND PALETTE v1.0 ── */
+      --olive:        #3D4A2E;
+      --olive-dim:    #2C361F;
+      --olive-glow:   rgba(61,74,46,0.15);
+      --earth:        #8B7355;
+      --midnight:     #1A1A1A;
+      --amber:        #C8860A;
+      --brass:        #E8A820;
+      --smoke:        #F5F3EE;
+      --ash:          #9A9A8A;
+      --black:        #0D0F0A;
+      --dark:         #131510;
+      --card:         #1B1F17;
+      --card2:        #20241B;
+      --border:       #2D3325;
+      --green:        #3D4A2E;
+      --green-lt:     #8B7355;
+      --white:        #F5F3EE;
+      --muted:        #9A9A8A;
+      --radius:       2px;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── DRAFT BANNER ── */
+    .draft-banner {
+      background: rgba(200,134,10,0.08);
+      border-bottom: 2px solid var(--amber);
+      padding: 11px 24px;
+      text-align: center;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--olive);
+      border: 1px solid rgba(200,134,10,0.4);
+      border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 17px; color: var(--smoke); letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 18px; font-weight: 400; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--smoke);
+    }
+
+    .logo-sub {
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 10px; letter-spacing: 2px; color: var(--ash);
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 40px;
+      position: relative;
+    }
+
+    /* Operational lines texture — brand guidelines §09 */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        30deg,
+        rgba(61,74,46,0.06) 0px,
+        rgba(61,74,46,0.06) 1px,
+        transparent 1px,
+        transparent 28px
+      );
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(200,134,10,0.1);
+      border: 1px solid var(--amber);
+      color: var(--amber);
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero-intro {
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 16px;
+      color: var(--ash);
+      max-width: 600px;
+      line-height: 1.7;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+
+    /* ── CONTEXT BOX ── */
+    .context-box {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 32px;
+    }
+
+    .context-inner {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--olive);
+      border-radius: 2px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .context-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .context-label {
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ash);
+    }
+
+    .context-value {
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 13px;
+      color: var(--smoke);
+      font-weight: 400;
+    }
+
+    /* ── TALLY FORM WRAPPER ── */
+    .form-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+
+    .form-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--olive);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    /* Tally iframe override — transparent bg so our card shows through */
+    .form-card iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+
+    /* ── GDPR NOTE ── */
+    .gdpr-note {
+      margin-top: 12px;
+      padding: 14px 16px;
+      background: rgba(200,134,10,0.04);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--amber);
+      border-radius: 2px;
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 12px;
+      color: var(--ash);
+      line-height: 1.6;
+    }
+
+    .gdpr-note a { color: var(--muted); text-decoration: underline; }
+    .gdpr-note a:hover { color: var(--amber); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      color: var(--ash);
+      border-top: 1px solid var(--border);
+      line-height: 1.8;
+    }
+
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .context-inner { grid-template-columns: 1fr; gap: 12px; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-mark">HA</div>
+    <div>
+      <div class="logo-text">Hotshots Airsoft</div>
+      <div class="logo-sub">London · Mobile Range</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge">Market Research · 3 minutes</div>
+    <h1>Help us build the right experience.</h1>
+    <p class="hero-intro">We're building a mobile, military-instructor-led airsoft range for London. Your answers will directly shape how we design and price our events. No sales pitch — just research.</p>
+  </section>
+
+  <!-- CONTEXT STRIP -->
+  <div class="context-box">
+    <div class="context-inner">
+      <div class="context-item">
+        <div class="context-label">Time required</div>
+        <div class="context-value">Under 3 minutes</div>
+      </div>
+      <div class="context-item">
+        <div class="context-label">Data use</div>
+        <div class="context-value">Internal planning only. Never sold.</div>
+      </div>
+      <div class="context-item">
+        <div class="context-label">Contact</div>
+        <div class="context-value">Only if you opt in at the end</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TALLY FORM -->
+  <div class="form-wrapper">
+    <div class="form-card">
+      <iframe
+        data-tally-src="https://tally.so/embed/dW8dzy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="500"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Hotshots Airsoft Market Research Survey"
+      ></iframe>
+    </div>
+
+    <!-- GDPR NOTE -->
+    <div class="gdpr-note">
+      <strong style="color: var(--smoke); font-weight: 600;">Data &amp; Privacy</strong> — Your responses are held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) and used only for internal business planning. Responses are processed by <a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">Tally</a> (EU-hosted, GDPR-compliant, DPA in place). We do not sell your data or share it with third parties for marketing. If you provide your email, you can withdraw consent at any time by emailing <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. See our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> for full details.
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Hotshots Airsoft Ltd &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; Company No. 17158689</p>
+    <p style="margin-top:6px">
+      <a href="index.html">Waitlist</a>
+      &nbsp;·&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="legal-notice.html">Legal Notice</a>
+    </p>
+  </footer>
+
+  <!-- TALLY EMBED SCRIPT -->
+  <script>
+    var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function() {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+                e.src = e.dataset.tallySrc;
+              });
+        };
+    if ("undefined" != typeof Tally) {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    }
+  </script>
+
+</body>
+</html>
