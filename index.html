@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0104)file:///C:/Users/kay_m/.claude/sessions/claude_cowork/02_projects/mobile_airsoft_range/drafts/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hotshots Airsoft — Join the Waitlist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./index_files/css2" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -473,31 +473,31 @@
 
     <!-- SEGMENT TOGGLE -->
     <div class="segment-toggle">
-      <input type="radio" name="segment_toggle" id="seg_corporate" value="Corporate">
+      <input type="radio" name="segment_toggle" id="seg_corporate" value="Corporate" />
       <label for="seg_corporate">Corporate Event</label>
-      <input type="radio" name="segment_toggle" id="seg_consumer" value="Consumer">
+      <input type="radio" name="segment_toggle" id="seg_consumer" value="Consumer" />
       <label for="seg_consumer">Group / Personal</label>
     </div>
 
     <form id="waitlistForm" action="https://formspree.io/f/xzdolnwn" method="POST">
 
-      <input type="hidden" name="segment" id="segmentHidden" value="">
+      <input type="hidden" name="segment" id="segmentHidden" value="" />
 
       <!-- Common fields -->
       <div class="field-group">
         <div class="field-row">
           <div class="field">
             <label class="field-label" for="firstName">First Name <span>*</span></label>
-            <input type="text" id="firstName" name="first_name" placeholder="Jane" required="">
+            <input type="text" id="firstName" name="first_name" placeholder="Jane" required />
           </div>
           <div class="field">
             <label class="field-label" for="lastName">Last Name <span>*</span></label>
-            <input type="text" id="lastName" name="last_name" placeholder="Smith" required="">
+            <input type="text" id="lastName" name="last_name" placeholder="Smith" required />
           </div>
         </div>
         <div class="field">
           <label class="field-label" for="email">Email Address <span>*</span></label>
-          <input type="email" id="email" name="email" placeholder="jane@company.com" required="">
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
         </div>
       </div>
 
@@ -505,17 +505,17 @@
       <div class="field-group conditional" id="corporateFields">
         <div class="field">
           <label class="field-label" for="company">Company Name <span>*</span></label>
-          <input type="text" id="company" name="company_name" placeholder="Acme Ltd">
+          <input type="text" id="company" name="company_name" placeholder="Acme Ltd" />
         </div>
         <div class="field-row">
           <div class="field">
             <label class="field-label" for="jobTitle">Job Title</label>
-            <input type="text" id="jobTitle" name="job_title" placeholder="Events Manager">
+            <input type="text" id="jobTitle" name="job_title" placeholder="Events Manager" />
           </div>
           <div class="field">
             <label class="field-label" for="corpGroupSize">Approx. Group Size</label>
             <select id="corpGroupSize" name="group_size">
-              <option value="" disabled="" selected="">Select…</option>
+              <option value="" disabled selected>Select…</option>
               <option>Up to 10</option>
               <option>11 – 20</option>
               <option>21 – 50</option>
@@ -526,7 +526,7 @@
         <div class="field">
           <label class="field-label" for="eventFreq">How often do you run team events?</label>
           <select id="eventFreq" name="event_frequency">
-            <option value="" disabled="" selected="">Select…</option>
+            <option value="" disabled selected>Select…</option>
             <option>Once a year</option>
             <option>2–3 times a year</option>
             <option>Quarterly</option>
@@ -541,7 +541,7 @@
           <div class="field">
             <label class="field-label" for="eventType">Event Type</label>
             <select id="eventType" name="event_type">
-              <option value="" disabled="" selected="">Select…</option>
+              <option value="" disabled selected>Select…</option>
               <option>Stag Do</option>
               <option>Hen Do</option>
               <option>Birthday</option>
@@ -553,7 +553,7 @@
           <div class="field">
             <label class="field-label" for="consGroupSize">Approx. Group Size</label>
             <select id="consGroupSize" name="group_size">
-              <option value="" disabled="" selected="">Select…</option>
+              <option value="" disabled selected>Select…</option>
               <option>Up to 6</option>
               <option>7 – 12</option>
               <option>13 – 20</option>
@@ -568,7 +568,7 @@
         <div class="field">
           <label class="field-label" for="source">How did you hear about us?</label>
           <select id="source" name="source">
-            <option value="" disabled="" selected="">Select…</option>
+            <option value="" disabled selected>Select…</option>
             <option>LinkedIn</option>
             <option>Instagram / TikTok</option>
             <option>Tagvenue</option>
@@ -584,15 +584,15 @@
       <!-- ── GDPR CONSENT BLOCK ── -->
       <div class="consent-block">
         <div class="consent-row">
-          <input type="checkbox" id="marketingConsent" name="marketing_consent" value="yes" required="">
+          <input type="checkbox" id="marketingConsent" name="marketing_consent" value="yes" required />
           <label class="consent-text" for="marketingConsent">
-            I agree to receive email updates from Hotshots Airsoft Ltd about our launch and when bookings become available. I understand I can withdraw this consent at any time by emailing <a href="mailto:hotshots.airsoftuk@gmail.com">hotshots.airsoftuk@gmail.com</a>. <span style="color: var(--amber);">*</span>
+            I agree to receive email updates from Hotshots Airsoft Ltd about our launch and when bookings become available. I understand I can withdraw this consent at any time by emailing <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. <span style="color: var(--amber);">*</span>
           </label>
         </div>
         <div class="consent-error" id="consentError">You must tick this box to join the waitlist.</div>
 
         <div class="data-note">
-          Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) solely for the purpose of notifying you when bookings open. We do not sell or share your data with third parties for marketing. Data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> as our form processor. For full details on how we handle your data, your rights, and how to request deletion, see our <a href="file:///C:/Users/kay_m/.claude/sessions/claude_cowork/02_projects/mobile_airsoft_range/drafts/privacy-policy.html" target="_blank">Privacy Policy</a>.
+          Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689) solely for the purpose of notifying you when bookings open. We do not sell or share your data with third parties for marketing. Data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> as our form processor. For full details on how we handle your data, your rights, and how to request deletion, see our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
         </div>
       </div>
 
@@ -608,7 +608,7 @@
       <h3>You're on the list.</h3>
       <p>We'll be in touch when bookings open.<br><br>
       To request deletion of your data at any time, email<br>
-      <a href="mailto:hotshots.airsoftuk@gmail.com">hotshots.airsoftuk@gmail.com</a>.</p>
+      <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>.</p>
     </div>
 
   </div>
@@ -632,5 +632,17 @@
     </div>
   </div>
 
+
   <footer>
-    <p>Hotshots Airsoft Ltd · Registered in Eng</p></footer></body></html>
+    <p>© Hotshots Airsoft Ltd &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; Company No. 17158689</p>
+    <p style="margin-top:6px">
+      <a href="market-research.html">Market Research</a>
+      &nbsp;·&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="legal-notice.html">Legal Notice</a>
+    </p>
+  </footer>
+
+</body>
+</html>
