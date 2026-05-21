@@ -270,9 +270,37 @@
       .form-header { padding: 22px 20px 0; }
       .what-to-expect { grid-template-columns: 1fr; }
     }
+
+    /* ── ACCESSIBILITY ── */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 8px;
+      z-index: 9999;
+      padding: 8px 16px;
+      background: var(--olive);
+      color: var(--smoke);
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 2px;
+    }
+    .skip-link:focus { left: 8px; }
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- HEADER -->
   <header>
@@ -282,6 +310,8 @@
       <div class="logo-sub">London · Mobile Range</div>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- HERO -->
   <section class="hero">
@@ -318,7 +348,7 @@
 
     <!-- GDPR NOTE -->
     <div class="gdpr-note">
-      <strong style="color: var(--smoke); font-weight: 600;">Data &amp; Privacy</strong> — Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689, ICO Reg. ZC149884) and used only to notify you when bookings open. Responses are processed by <a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">Tally</a> (EU-hosted, GDPR-compliant, DPA in place). We do not sell your data or share it with third parties for marketing. You can withdraw consent at any time by emailing <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. See our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> for full details.
+      <strong style="color: var(--smoke); font-weight: 600;">Data &amp; Privacy</strong> — Your data is held by <strong>Hotshots Airsoft Ltd</strong> (Company No. 17158689, ICO Reg. ZC149884) and used only to notify you when bookings open. Responses are processed by <a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">Tally<span class="sr-only"> (opens in new tab)</span></a> (EU-hosted, GDPR-compliant, DPA in place). We do not sell your data or share it with third parties for marketing. You can withdraw consent at any time by emailing <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. See our <a href="privacy-policy.html" target="_blank">Privacy Policy<span class="sr-only"> (opens in new tab)</span></a> for full details.
     </div>
   </div>
 
@@ -340,6 +370,8 @@
       <div class="expect-text">AttackSense digital targets with a real-time leaderboard for every session.</div>
     </div>
   </div>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
