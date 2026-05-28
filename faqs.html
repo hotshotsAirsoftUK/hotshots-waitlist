@@ -5,15 +5,15 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='2' fill='%233D4A2E'/><text x='16' y='22' font-family='Arial' font-size='13' font-weight='bold' fill='%23C8860A' text-anchor='middle'>HA</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/about.html" />
-  <meta property="og:title" content="About Us — Hotshots Airsoft" />
-  <meta property="og:description" content="Meet the team behind Hotshots Airsoft. Military-trained instructors bringing a professional, fully mobile airsoft experience directly to you." />
+  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/faqs.html" />
+  <meta property="og:title" content="FAQs — Hotshots Airsoft" />
+  <meta property="og:description" content="Got questions? Find answers about safety, equipment, group sizes, and how the experience works." />
   <meta property="og:image" content="https://www.hotshotsairsoft.co.uk/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Us — Hotshots Airsoft" />
-  <meta name="twitter:description" content="Meet the team behind Hotshots Airsoft. Military-trained instructors bringing a professional, fully mobile airsoft experience directly to you." />
-  <meta name="description" content="Meet the team behind Hotshots Airsoft. Military-trained instructors bringing a professional, fully mobile airsoft experience directly to you." />
-  <title>Hotshots Airsoft — About Us</title>
+  <meta name="twitter:title" content="FAQs — Hotshots Airsoft" />
+  <meta name="twitter:description" content="Got questions? Find answers about safety, equipment, group sizes, and how the experience works." />
+  <meta name="description" content="Got questions? Find answers about safety, equipment, group sizes, and how the experience works." />
+  <title>Hotshots Airsoft — FAQs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -26,7 +26,10 @@
       --black: #0D0F0A; --dark: #131510; --card: #1B1F17;
       --card2: #20241B; --border: #2D3325; --muted: #9A9A8A; --radius: 2px;
     }
+
     body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 16px; line-height: 1.7; min-height: 100vh; }
+
+    /* ── HEADER ── */
 
     /* ── HEADER ── */
     header {
@@ -45,261 +48,60 @@
     .logo-mark { width: 36px; height: 36px; background: var(--olive); border: 1px solid rgba(200,134,10,0.4); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', Arial, sans-serif; font-size: 17px; color: var(--smoke); letter-spacing: 1px; flex-shrink: 0; }
     .logo-text { font-family: 'Bebas Neue', Arial, sans-serif; font-size: 18px; letter-spacing: 3px; text-transform: uppercase; color: var(--smoke); }
     .logo-sub { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--ash); text-transform: uppercase; }
-
-    nav a {
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: var(--amber);
-    }
+    nav a { color: var(--ash); text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; transition: color 0.2s; }
+    nav a:hover { color: var(--amber); }
 
     /* ── HERO ── */
-    .hero { 
-      max-width: 1000px; 
-      margin: 0 auto; 
-      padding: 80px 24px 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-      position: relative;
+    .page-hero {
+      max-width: 680px; margin: 0 auto; padding: 72px 24px 52px; text-align: center;
+    }
+    .badge { display: inline-block; background: rgba(200,134,10,0.1); border: 1px solid var(--amber); color: var(--amber); font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 24px; }
+    .page-hero h1 { font-family: 'Bebas Neue', Arial, sans-serif; font-size: clamp(36px, 6vw, 56px); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 16px; }
+    .page-hero h1 span { color: var(--amber); }
+    .page-hero p { font-size: 16px; color: var(--ash); max-width: 480px; margin: 0 auto; line-height: 1.7; }
+
+    /* ── FAQ LIST ── */
+    .faq-list {
+      max-width: 680px; margin: 40px auto 80px; padding: 0 24px;
     }
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: repeating-linear-gradient(
-        30deg,
-        rgba(61,74,46,0.05) 0px,
-        rgba(61,74,46,0.05) 1px,
-        transparent 1px,
-        transparent 28px
-      );
-      pointer-events: none;
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 2px;
+      margin-bottom: 8px; background: var(--card); overflow: hidden;
     }
 
-    .hero-content { position: relative; z-index: 1; }
-    .hero-accent { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin-bottom: 16px; }
-    .hero h1 { font-family: 'Bebas Neue', Arial, sans-serif; font-size: clamp(40px, 6vw, 64px); line-height: 1.1; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
-    .hero h1 span { color: var(--amber); }
-    .hero p { font-size: 16px; color: var(--ash); line-height: 1.8; margin-bottom: 28px; }
-
-    /* ── INSTRUCTOR CARD ── */
-    .instructor-card {
-      background: linear-gradient(135deg, var(--card) 0%, var(--card2) 100%);
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--amber);
-      border-radius: 2px;
-      padding: 32px 28px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .instructor-badge {
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      padding: 20px 24px; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; text-align: left;
       font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--amber);
-      margin-bottom: 12px;
+      font-size: 15px; font-weight: 600; letter-spacing: 0.3px;
+      color: var(--smoke); transition: color 0.2s;
     }
+    .faq-question:hover { color: var(--amber); }
+    .faq-question.open { color: var(--amber); border-bottom: 1px solid var(--border); }
 
-    .instructor-title {
-      font-family: 'Bebas Neue', Arial, sans-serif;
-      font-size: 22px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--smoke);
-      margin-bottom: 8px;
-    }
+    .faq-chevron { flex-shrink: 0; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.25s ease; }
+    .faq-question.open .faq-chevron { transform: rotate(180deg); }
 
-    .instructor-subtitle {
-      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 1px;
-      color: var(--earth);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; padding: 0 24px; }
+    .faq-answer.open { max-height: 400px; padding: 18px 24px 22px; }
+    .faq-answer p { font-size: 15px; color: var(--ash); line-height: 1.8; }
 
-    .instructor-detail {
-      font-size: 14px;
-      color: #B8B4AC;
-      line-height: 1.7;
-      margin-bottom: 12px;
+    /* ── CTA ── */
+    .faq-cta {
+      max-width: 680px; margin: 0 auto 80px; padding: 0 24px; text-align: center;
+      border-top: 1px solid var(--border); padding-top: 48px;
     }
-
-    .instructor-detail strong { color: var(--smoke); font-weight: 600; }
-
-    /* ── EXPERIENCE SECTION ── */
-    .experience-section {
-      max-width: 1000px;
-      margin: 80px auto;
-      padding: 0 24px;
-    }
-
-    .experience-intro {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .experience-intro p {
-      font-size: 16px;
-      color: var(--ash);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .experience-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-
-    .experience-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--olive);
-      border-radius: 2px;
-      padding: 32px 24px;
-    }
-
-    .experience-title {
-      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--smoke);
-      margin-bottom: 6px;
-    }
-
-    .experience-subtitle {
-      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 1px;
-      color: var(--earth);
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .experience-text {
-      font-size: 14px;
-      color: #B8B4AC;
-      line-height: 1.7;
-    }
-
-    @media (max-width: 768px) {
-      .experience-grid { grid-template-columns: 1fr; }
-    }
-    .pillars {
-      max-width: 1000px;
-      margin: 80px auto 0;
-      padding: 0 24px 80px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .pillar {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--olive);
-      border-radius: 2px;
-      padding: 32px 24px;
-      text-align: center;
-    }
-
-    .pillar-number {
-      font-family: 'Bebas Neue', Arial, sans-serif;
-      font-size: 48px;
-      color: var(--amber);
-      opacity: 0.3;
-      margin-bottom: -8px;
-    }
-
-    .pillar-title {
-      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--smoke);
-      margin-bottom: 12px;
-    }
-
-    .pillar-text {
-      font-size: 14px;
-      color: #B8B4AC;
-      line-height: 1.6;
-    }
-
-    /* ── CTA SECTION ── */
-    .cta-section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 24px 100px;
-      text-align: center;
-      border-top: 1px solid var(--border);
-      padding-top: 60px;
-    }
-
-    .cta-heading {
-      font-family: 'Bebas Neue', Arial, sans-serif;
-      font-size: 36px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
-
-    .cta-subheading {
-      font-size: 16px;
-      color: var(--ash);
-      max-width: 500px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: var(--amber);
-      color: var(--black);
-      font-family: 'Bebas Neue', Impact, sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 14px 36px;
-      text-decoration: none;
-      border-radius: 2px;
-      transition: all 0.3s;
-      border: none;
-      border-bottom: 2px solid var(--amber);
-    }
-
-    .cta-button:hover {
-      background: transparent;
-      color: var(--amber);
-    }
+    .faq-cta h2 { font-family: 'Bebas Neue', Arial, sans-serif; font-size: 28px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+    .faq-cta p { font-size: 14px; color: var(--ash); margin-bottom: 24px; }
+    .cta-button { display: inline-block; background: var(--amber); color: var(--black); font-family: 'Bebas Neue', Impact, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 14px 36px; text-decoration: none; border-radius: 2px; border: none;
+      border-bottom: 2px solid var(--amber); transition: all 0.3s; }
+    .cta-button:hover { background: transparent; color: var(--amber); }
 
     /* ── FOOTER ── */
     footer { text-align: center; padding: 32px 24px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; }
     footer a { color: var(--muted); text-decoration: underline; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 40px; }
-      .pillars { grid-template-columns: 1fr; }
-      .cta-heading { font-size: 28px; }
-    }
 
     /* ── ACCESSIBILITY ── */
     .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
@@ -460,67 +262,71 @@
 
   <main id="main-content">
 
-    <!-- HERO + KWAME -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-accent">Who We Are</div>
-        <h1>Your Crew.<br>Your Space.<br><span>Unforgettable.</span></h1>
-        <p>Hotshots brings a professional airsoft experience to wherever you are. Not a generic range day. A tailored session built for your group, your space, your event. Led by Nana — a serving British Army Skill at Arms Instructor who designs experiences, not just runs games.</p>
-      </div>
-      <div class="instructor-card">
-        <div class="instructor-badge">Designed By</div>
-        <div class="instructor-title">Nana</div>
-        <div class="instructor-subtitle">British Army Reserve Royal Engineer</div>
-        <div class="instructor-detail"><strong>Skill at Arms Instructor</strong> — he's trained soldiers. Your session gets the same structure, discipline, and attention to detail.</div>
-        <div class="instructor-detail">Royal Engineer background means he understands <strong>how to build an experience that works</strong> — safe, competitive, memorable.</div>
-      </div>
-    </section>
+    <div class="page-hero">
+      <div class="badge">Got Questions?</div>
+      <h1>Frequently Asked <span>Questions</span></h1>
+      <p>Everything you need to know before you book. Can't find your answer? Email us at <a href="mailto:info@hotshotsairsoft.co.uk" style="color: var(--amber); text-decoration: none;">info@hotshotsairsoft.co.uk</a>.</p>
+    </div>
 
-    <!-- EXPERIENCE TYPES -->
-    <section class="experience-section">
-      <div class="experience-intro">
-        <h2 style="font-family: 'Bebas Neue', Arial, sans-serif; font-size: 28px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;">Two Experiences. Pick Your Style.</h2>
-        <p style="font-size: 16px; color: var(--ash); max-width: 600px; margin: 0 auto; line-height: 1.7;">Every session runs 2, 4, or 8 hours. Live scoring via AttackSense. Professional debrief. Real competitive structure.</p>
-      </div>
-      <div class="experience-grid">
-        <div class="experience-card">
-          <div class="experience-title">Static Shooting Range</div>
-          <div class="experience-subtitle">AttackSense Digital System.</div>
-          <div class="experience-text">Interactive games built on the AttackSense digital system. Precision-focused. Accuracy and discipline. Real-time scoring. Competitive without the chaos.</div>
-        </div>
-        <div class="experience-card">
-          <div class="experience-title">Tactical CQB</div>
-          <div class="experience-subtitle">Steel & Digital Combined.</div>
-          <div class="experience-text">Custom IPSC-style games built on a mixture of steel poppers and AttackSense digital targets. Dynamic. Speed. Real-world scenarios. High-pressure competitive shooting.</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is airsoft safe?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Yes. Every session is run by a serving British Army Reserve Skill at Arms Instructor — the same credential used to train military personnel. All weapons are chronograph-tested before use, every participant wears a full-face mask and chest protection, and a full safety briefing is given before anything starts. Safety is the foundation of how we operate, not an afterthought.</p>
         </div>
       </div>
-    </section>
 
-    <!-- THREE PILLARS (REFRAMED) -->
-    <section class="pillars">
-      <div class="pillar">
-        <div class="pillar-number">1</div>
-        <div class="pillar-title">Your Space</div>
-        <div class="pillar-text">We come to you. Your office car park, your venue grounds, your event. This is about you, not fitting into a generic range.</div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need to bring any equipment?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Nothing at all. We bring everything — rifles, pistols, magazines, ammunition, full-face masks, chest rigs, and holsters. You provide only the space. Setup takes under an hour and we pack everything down at the end.</p>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-number">2</div>
-        <div class="pillar-title">Your Experience</div>
-        <div class="pillar-text">Static Shooting Range or Tactical CQB. Your choice. Full equipment. Professional scoring. Built for your group.</div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-number">3</div>
-        <div class="pillar-title">Professional Grade</div>
-        <div class="pillar-text">Nana ensures it's legitimate. No improvisation. The same standards he uses to train military units.</div>
-      </div>
-    </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-      <h2 class="cta-heading">Don't miss this.</h2>
-      <p class="cta-subheading">Early access spots are limited. Lock yours in now.</p>
-      <a href="index.html" class="cta-button">Get Early Access</a>
-    </section>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How many people can take part?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Up to 12 participants per booking. Tactical CQB sessions are capped at 6–10 depending on the configuration. Not sure about your group size? Get in touch and we'll find the right format for you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much space do you need?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>We work with what you have — a car park, outdoor garden, event venue grounds, or a large indoor space. We configure the range to fit your location. Not sure if your space works? Drop us an email with the details and we'll confirm.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Where do you operate?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>We're London-based and operate across the city and surrounding areas, up to 90 minutes from central London. If you're unsure whether we cover your location, email us at <a href="mailto:info@hotshotsairsoft.co.uk" style="color: var(--amber);">info@hotshotsairsoft.co.uk</a> and we'll confirm.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-cta">
+      <h2>Still have a question?</h2>
+      <p>Email us and we'll get back to you.</p>
+      <a href="mailto:info@hotshotsairsoft.co.uk" class="cta-button">Contact Us</a>
+    </div>
 
   
 
@@ -578,41 +384,29 @@
     <p style="margin-top:6px">
       <a href="index.html">Waitlist</a>
       &nbsp;·&nbsp;
-      <a href="market-research.html">Market Research</a>
-      &nbsp;·&nbsp;
       <a href="privacy-policy.html">Privacy Policy</a>
       &nbsp;·&nbsp;
       <a href="legal-notice.html">Legal Notice</a>
     </p>
   </footer>
 
-  <!-- HAMBURGER MENU SCRIPT -->
   <script>
     (function () {
-      var btn = document.getElementById('hamburger');
-      var drop = document.getElementById('nav-dropdown');
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var open = btn.classList.toggle('active');
-        drop.classList.toggle('open', open);
-        btn.setAttribute('aria-expanded', open);
-        drop.setAttribute('aria-hidden', !open);
-      });
-      document.addEventListener('click', function (e) {
-        if (!btn.contains(e.target) && !drop.contains(e.target)) {
-          btn.classList.remove('active');
-          drop.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-          drop.setAttribute('aria-hidden', 'true');
-        }
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-          btn.classList.remove('active');
-          drop.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-          btn.focus();
-        }
+      document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var answer = btn.nextElementSibling;
+          var isOpen = btn.classList.contains('open');
+          document.querySelectorAll('.faq-question').forEach(function (b) {
+            b.classList.remove('open');
+            b.setAttribute('aria-expanded', 'false');
+            b.nextElementSibling.classList.remove('open');
+          });
+          if (!isOpen) {
+            btn.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+          }
+        });
       });
     })();
   </script>

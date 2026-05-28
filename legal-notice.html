@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='2' fill='%233D4A2E'/><text x='16' y='22' font-family='Arial' font-size='13' font-weight='bold' fill='%23C8860A' text-anchor='middle'>HA</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/legal-notice.html" />
+  <meta property="og:title" content="Legal Notice — Hotshots Airsoft" />
+  <meta property="og:description" content="Legal information for Hotshots Airsoft Ltd, registered in England and Wales." />
+  <meta property="og:image" content="https://www.hotshotsairsoft.co.uk/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Legal Notice — Hotshots Airsoft" />
+  <meta name="twitter:description" content="Legal information for Hotshots Airsoft Ltd, registered in England and Wales." />
+  <meta name="description" content="Legal information for Hotshots Airsoft Ltd, registered in England and Wales." />
   <title>Hotshots Airsoft — Legal Notice</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    html { scroll-behavior: smooth; }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --olive: #3D4A2E; --olive-dim: #2C361F; --earth: #8B7355;
@@ -16,7 +27,21 @@
       --card2: #20241B; --border: #2D3325; --muted: #9A9A8A; --radius: 2px;
     }
     body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 16px; line-height: 1.7; min-height: 100vh; }
-    header { border-bottom: 1px solid var(--border); padding: 18px 24px; display: flex; align-items: center; gap: 12px; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(13, 15, 10, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
     .logo-mark { width: 36px; height: 36px; background: var(--olive); border: 1px solid rgba(200,134,10,0.4); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', Arial, sans-serif; font-size: 17px; color: var(--smoke); letter-spacing: 1px; flex-shrink: 0; }
     .logo-text { font-family: 'Bebas Neue', Arial, sans-serif; font-size: 18px; letter-spacing: 3px; text-transform: uppercase; color: var(--smoke); }
     .logo-sub { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--ash); text-transform: uppercase; }
@@ -46,7 +71,134 @@
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     /* Contrast fix: links on card backgrounds */
     .company-card a, .notice-box a { color: var(--ash); }
-  </style>
+
+    /* ── HAMBURGER MENU ── */
+    .hamburger {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: var(--smoke);
+      border-radius: 1px;
+      transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1), background 0.2s;
+    }
+    .hamburger span:nth-child(1) { width: 24px; }
+    .hamburger span:nth-child(2) { width: 24px; }
+    .hamburger span:nth-child(3) { width: 24px; }
+    .hamburger.active span:nth-child(1) { width: 24px; background: var(--amber); }
+    .hamburger.active span:nth-child(2) { width: 14px; background: var(--amber); }
+    .hamburger.active span:nth-child(3) { width: 4px;  background: var(--amber); }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--amber);
+      min-width: 160px;
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(-6px);
+      pointer-events: none;
+      transition: opacity 0.22s ease, transform 0.22s ease;
+      z-index: 200;
+    }
+    .nav-dropdown.open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+    .nav-dropdown a {
+      display: block;
+      padding: 13px 20px;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ash);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover { color: var(--amber); background: rgba(200, 134, 10, 0.05); }
+    /* ── FOLLOW US ── */
+    .social-section {
+      max-width: 560px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .social-label {
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin-bottom: 20px;
+    }
+    .social-label::before, .social-label::after {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 1px;
+      background: var(--border);
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--ash);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .social-icon:hover { color: var(--amber); border-color: var(--amber); background: rgba(200, 134, 10, 0.06); }
+    .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+    .social-tagline {
+      margin-top: 16px;
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 12px;
+      color: var(--ash);
+      letter-spacing: 0.3px;
+      line-height: 1.6;
+    }
+    /* ── ACTIVE NAV LINK ── */
+    .nav-dropdown a[aria-current="page"] {
+      color: var(--amber);
+      background: rgba(200, 134, 10, 0.05);
+    }
+  
+    /* ── FOCUS OUTLINE (§16.3.4) ── */
+    *:focus-visible {
+      outline: 2px solid var(--olive);
+      outline-offset: 2px;
+    }
+    *:focus:not(:focus-visible) {
+      outline: none;
+    }
+    </style>
 </head>
 <body>
 
@@ -58,6 +210,18 @@
       <div class="logo-text">Hotshots Airsoft</div>
       <div class="logo-sub">London · Mobile Range</div>
     </div>
+    <nav style="margin-left: auto; position: relative;">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-dropdown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
+        <a href="about.html" role="menuitem">About Us</a>
+        <a href="index.html#contact" role="menuitem">Contact Us</a>
+        <a href="index.html#waitlist" role="menuitem">Join Waitlist</a>
+      </div>
+    </nav>
   </header>
 
   <main id="main-content">
@@ -117,7 +281,56 @@
 
   </div>
 
-  </main>
+  
+
+  <!-- FOLLOW US -->
+  <section class="social-section" aria-label="Follow us on social media">
+    <div class="social-label">Follow Us</div>
+    <div class="social-icons">
+
+      <!-- Instagram -->
+      <a class="social-icon" href="https://www.instagram.com/hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on Instagram (opens in new tab)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+
+      <!-- TikTok -->
+      <a class="social-icon" href="https://www.tiktok.com/@hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on TikTok (opens in new tab)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.25 8.25 0 004.83 1.55V6.79a4.85 4.85 0 01-1.06-.1z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a class="social-icon" href="https://www.youtube.com/@hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on YouTube (opens in new tab)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+        </svg>
+      </a>
+
+      <!-- X / Twitter -->
+      <a class="social-icon" href="https://x.com/hotshotsairsoft" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on X (opens in new tab)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+        </svg>
+      </a>
+
+      <!-- Twitch -->
+      <a class="social-icon" href="https://www.twitch.tv/hotshotsairsoft" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on Twitch (opens in new tab)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/>
+        </svg>
+      </a>
+
+    </div>
+    <p class="social-tagline">Follow us for exclusive offers, behind-the-scenes content and event highlights</p>
+  </section>
+
+    <!-- FOOTER -->
+
+
+</main>
 
   <footer>
     <p>© 2026 Hotshots Airsoft Ltd &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; Company No. 17158689</p>
@@ -129,6 +342,68 @@
       <a href="privacy-policy.html">Privacy Policy</a>
     </p>
   </footer>
+
+  <!-- HAMBURGER MENU SCRIPT -->
+  <script>
+    (function () {
+      var btn = document.getElementById('hamburger');
+      var drop = document.getElementById('nav-dropdown');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = btn.classList.toggle('active');
+        drop.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        drop.setAttribute('aria-hidden', !open);
+      });
+      document.addEventListener('click', function (e) {
+        if (!btn.contains(e.target) && !drop.contains(e.target)) {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+          btn.focus();
+        }
+      });
+    })();
+  </script>
+
+
+  <!-- ACTIVE NAV LINK SCRIPT -->
+  <script>
+    (function () {
+      var path = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
+        var href = a.getAttribute('href').split('#')[0].split('/').pop() || 'index.html';
+        if (href === path) {
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
+
+  <!-- DROPDOWN CLOSE ON LINK CLICK -->
+  <script>
+    (function () {
+      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          var btn = document.getElementById('hamburger');
+          var drop = document.getElementById('nav-dropdown');
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
