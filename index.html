@@ -915,13 +915,29 @@
   
     /* ── FOCUS OUTLINE (§16.3.4) ── */
     *:focus-visible {
-      outline: 2px solid var(--olive);
-      outline-offset: 2px;
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
     }
     *:focus:not(:focus-visible) {
       outline: none;
     }
     </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RGF1630YKT');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x16wb0jmp2");
+  </script>
 </head>
 <body>
 
@@ -1003,7 +1019,7 @@
   </div>
   <!-- PACKAGES -->
   <div class="packages-wrapper">
-    <div class="packages-heading">Choose Your Experience</div>
+    <h2 class="packages-heading">Choose Your Experience</h2>
     <div class="packages-grid">
 
       <div class="package-card">
@@ -1085,7 +1101,7 @@
 
   <!-- CONTACT -->
   <section class="contact-section" id="contact" aria-label="Contact information">
-    <div class="contact-section-title">Contact Us</div>
+    <h2 class="contact-section-title">Contact Us</h2>
     <div class="contact-card">
 
       <div>
@@ -1172,13 +1188,15 @@
       <!-- Copy — centred -->
       <div class="footer-copy">
         <p>© 2026 Hotshots Airsoft Ltd &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; Company No. 17158689</p>
-        <p style="margin-top:6px">
+        <nav aria-label="Footer navigation">
+    <p style="margin-top:6px">
           <a href="market-research.html">Market Research</a>
           &nbsp;·&nbsp;
           <a href="privacy-policy.html">Privacy Policy</a>
           &nbsp;·&nbsp;
           <a href="legal-notice.html">Legal Notice</a>
         </p>
+    </nav>
       </div>
 
       <!-- Spacer mirrors icon to keep copy centred -->
