@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.55 123.17'%3E%3Cpolygon fill='%23c8860a' points='34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48'/%3E%3Cpath fill='%233d4a2e' d='M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z'/%3E%3C%2Fsvg%3E" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/terms/" />
+  <meta property="og:title" content="Terms of Use — Hotshots Airsoft" />
+  <meta property="og:description" content="Terms and conditions governing use of the Hotshots Airsoft website." />
+  <meta property="og:image" content="https://www.hotshotsairsoft.co.uk/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terms of Use — Hotshots Airsoft" />
+  <meta name="twitter:description" content="Terms and conditions governing use of the Hotshots Airsoft website." />
+  <meta name="description" content="Terms and conditions governing use of the Hotshots Airsoft website." />
+  <title>Terms of Use — Hotshots Airsoft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+    html { scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --olive: #3D4A2E; --olive-dim: #2C361F; --earth: #8B7355;
+      --amber: #C8860A; --smoke: #F5F3EE; --ash: #9A9A8A;
+      --black: #0D0F0A; --dark: #131510; --card: #1B1F17;
+      --card2: #20241B; --border: #2D3325; --muted: #9A9A8A; --radius: 2px;
+    }
+    body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.2); padding: 18px 24px; display: flex; align-items: center; gap: 12px; background: rgba(200,134,10,0.97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 6px 10px; border: 2px solid #000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
+    .logo-home-btn:hover { opacity: 0.75; }
+    .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
+    .ha-wm-ff   { font-family: 'Headline Gothic ATF','HeadlineGothicATF','Bebas Neue',serif; }
+    .ha-wm-sp   { font-size: 12.14px; letter-spacing: 0em; }
+    .ha-wm-amber{ fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
+    .ha-wm-olive{ fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
+    .ha-wm-bg   { fill: #000000; }
+    .ha-icon-amber { fill: #c8860a; }
+    .ha-icon-olive { fill: #3d4a2e; }
+    .hamburger { background: none; border: none; cursor: pointer; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .hamburger span { display: block; height: 2px; background: #000; border-radius: 1px; transition: width 0.35s cubic-bezier(0.23,1,0.32,1), background 0.2s; }
+    .hamburger span:nth-child(1) { width: 24px; }
+    .hamburger span:nth-child(2) { width: 24px; }
+    .hamburger span:nth-child(3) { width: 24px; }
+    .hamburger.active span:nth-child(1) { width: 24px; }
+    .hamburger.active span:nth-child(2) { width: 14px; }
+    .hamburger.active span:nth-child(3) { width: 4px; }
+    .nav-dropdown { position: absolute; top: calc(100% + 10px); right: 0; background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--amber); min-width: 160px; border-radius: 2px; opacity: 0; transform: translateY(-6px); pointer-events: none; transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200; }
+    .nav-dropdown.open { opacity: 1; transform: translateY(0); pointer-events: all; }
+    .nav-dropdown a { display: block; padding: 13px 20px; font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover { color: var(--amber); background: rgba(200,134,10,0.05); }
+    .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow',Arial,sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .skip-link:focus { left: 8px; }
+    .content { max-width: 700px; margin: 0 auto; padding: 52px 24px 80px; }
+    .page-title { font-family: 'Bebas Neue',Arial,sans-serif; font-size: clamp(32px,5vw,52px); letter-spacing: 3px; text-transform: uppercase; line-height: 1.0; margin-bottom: 10px; }
+    .page-meta { font-family: 'Barlow',Arial,sans-serif; font-size: 13px; color: var(--ash); margin-bottom: 36px; }
+    h2 { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--ash); margin-top: 44px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    p { font-size: 15px; color: #C8C4BC; margin-bottom: 14px; line-height: 1.7; }
+    ul, ol { margin: 0 0 16px 22px; }
+    li { font-size: 15px; color: #C8C4BC; margin-bottom: 7px; line-height: 1.6; }
+    a { color: var(--earth); text-decoration: underline; }
+    a:hover { color: var(--amber); }
+    strong { color: var(--smoke); font-weight: 600; }
+    .company-card { background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--olive); border-radius: 2px; padding: 20px 24px; margin-bottom: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .company-field { display: flex; flex-direction: column; gap: 4px; }
+    .company-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--ash); }
+    .company-value { font-family: 'Barlow',Arial,sans-serif; font-size: 14px; color: var(--smoke); }
+    .company-value a { color: var(--earth); }
+    .notice-box { background: var(--card); border: 1px solid var(--border); border-left: 2px solid var(--olive); border-radius: 2px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #B8B4AC; line-height: 1.6; }
+    table { width: 100%; border-collapse: collapse; margin: 0 0 28px; font-size: 14px; }
+    th { background: var(--card); color: var(--ash); font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+    td { padding: 12px 14px; border: 1px solid var(--border); color: #C8C4BC; vertical-align: top; line-height: 1.6; }
+    footer { text-align: center; padding: 40px 24px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; margin-top: 40px; }
+    footer a { color: var(--muted); text-decoration: underline; }
+    .footer-inner { display: flex; align-items: center; gap: 28px; }
+    .footer-icon { flex-shrink: 0; opacity: 0.5; }
+    .footer-copy { flex: 1; text-align: center; }
+    .footer-spacer { flex-shrink: 0; width: 44px; }
+    .social-section { max-width: 560px; margin: 60px auto 0; padding: 0 24px; text-align: center; }
+    .social-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ash); margin-bottom: 20px; }
+    .social-label::before, .social-label::after { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--border); vertical-align: middle; margin: 0 12px; }
+    .social-icons { display: flex; justify-content: center; gap: 16px; }
+    .social-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; color: var(--ash); text-decoration: none; transition: color 0.2s, border-color 0.2s, background 0.2s; }
+    .social-icon:hover { color: var(--amber); border-color: var(--amber); background: rgba(200,134,10,0.06); }
+    .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+    .social-tagline { margin-top: 16px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
+    @media (max-width: 520px) { .company-card { grid-template-columns: 1fr; } }
+    </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RGF1630YKT');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x16wb0jmp2");
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a href="/" class="logo-home-btn" aria-label="Hotshots Airsoft — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.77 52.02" style="height:44px;width:auto;" aria-hidden="true">
+        <path class="ha-wm-bg" d="M78.49,7.08c-.68-.75-1.93-1.65-4.04-1.65-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.02.27c-.59-.22-1.28-.36-2.12-.36-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.16,2.12-.13,1.74-1.18,13.57-.17,1.71-.3,3,3.01-.26,3.27-.29,2.12-.19h0s2.96-.26,2.96-.26l2.12-.19.04-.53c.68.31,1.56.54,2.69.54.27,0,.54-.01.82-.04,1.11-.1,2.09-.39,2.95-.82l-3.24,10.97-1.04,3.52,3.65-.32,2.06-.18.59-.05,1.77-.15,2.18-.19.71-.06h0s1.89-.17,1.89-.17h0s.36-.03.36-.03l1.76-.15h0s1.17-.1,1.17-.1l1-.09.44-.04,2.14-.19,1.61-.14c.3.06.63.1.98.1.17,0,.35,0,.54-.02,1.2-.11,2.24-.53,3.09-1.2.6.37,1.43.66,2.58.66.2,0,.41,0,.62-.03.6-.05,1.11-.17,1.57-.33l2.26-.2,2.18-.19,2.12-.19h0s1.85-.16,1.85-.16l2.18-.19,2.12-.18.16-2.12.08-1.16.54-6.18,1.5-.13.18-2.09.17-1.93.04-.45,2.93-.26,2.12-.19.11-1.52c.76.72,2,1.45,3.92,1.45.23,0,.46-.01.7-.03,3.9-.34,6.55-3.26,6.93-7.62.21-2.46-.4-4.1-1.29-5.26l1.63-.14.22-2.05c.28-2.71-.17-4.68-1.38-6.03Z"/>
+        <text class="ha-wm-ff" transform="translate(2.9 30.79) rotate(-5) scale(.99) skewX(-9.89)">
+          <tspan class="ha-wm-amber" x="0" y="0">HOTSHOTS</tspan>
+          <tspan class="ha-wm-sp" x="74.68" y="0"> </tspan>
+          <tspan class="ha-wm-olive"><tspan x="18.63" y="14">AIRSOFT</tspan></tspan>
+        </text>
+      </svg>
+    </a>
+    <div class="header-divider"></div>
+    <nav style="margin-left:auto;position:relative;">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-dropdown">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
+        <a href="/about/" role="menuitem">About Us</a>
+        <a href="mailto:info@hotshotsairsoft.co.uk" role="menuitem">Contact Us</a>
+        <a href="/#waitlist" role="menuitem">Join Waitlist</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+  <div class="content">
+
+    <h1 class="page-title">Terms of Use</h1>
+    <p class="page-meta">Last updated: 26 June 2026 &nbsp;&middot;&nbsp; Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; Company No. 17158689</p>
+
+    <p>Please read these terms and conditions (<strong>'Terms'</strong>) carefully as they contain important information about your rights and obligations when using this website (the <strong>'Website'</strong>) and in particular clauses 9.6 and 9.7. You should print a copy of these Terms for future reference.</p>
+
+    <p>By continuing to browse or use the Website, you are agreeing to comply with and be bound by these Terms.</p>
+
+    <div class="company-card">
+      <div class="company-field">
+        <div class="company-label">Company</div>
+        <div class="company-value">Hotshots Airsoft Ltd (trading as Hotshots Airsoft)</div>
+      </div>
+      <div class="company-field">
+        <div class="company-label">Company Number</div>
+        <div class="company-value">17158689</div>
+      </div>
+      <div class="company-field">
+        <div class="company-label">Registered Office</div>
+        <div class="company-value">124-128 City Road, London, EC1V 2NX</div>
+      </div>
+    </div>
+
+    <h2>1. How These Terms Apply</h2>
+
+    <p>1.1. By using the Website you are agreeing to comply with and be bound by these Terms regarding the use of the Website in consideration for us allowing you to access and use the Website. You must not use the Website if you do not agree to these Terms.</p>
+
+    <p>1.2. Use of the Website includes accessing or browsing the Website.</p>
+
+    <p>1.3. We reserve the right to change these Terms at any time. We will take reasonable steps to make you aware of any changes to the Terms, for example by posting them on the Website. You agree to be bound by any changes to these Terms when you use the Website after any such change is posted.</p>
+
+    <p>1.4. These Terms refer to the following, which also apply when using this Website:</p>
+    <ul>
+      <li>Our <a href="/privacy-policy/">Privacy &amp; Cookie Notice</a>, which sets out how we use your personal information and cookies.</li>
+      <li>Our <a href="/legal-notice/">Legal Notice</a>, which sets out information about Hotshots Airsoft Ltd.</li>
+    </ul>
+
+    <h2>2. Access</h2>
+
+    <p>2.1. You are responsible for making all arrangements necessary for you to have access to the Website.</p>
+
+    <p>2.2. You are responsible for ensuring that all persons who access the Website through your internet connection are aware of these Terms, and that they comply with them.</p>
+
+    <p>2.3. We make reasonable efforts to ensure that the Website is available to view and use 24 hours a day throughout each year; however, this is not guaranteed. The Website may be temporarily unavailable at any time at our sole discretion without notice to you.</p>
+
+    <p>2.4. Where possible, we will try to give you advance warning of maintenance issues but shall not be obliged to do so.</p>
+
+    <h2>3. Intellectual Property</h2>
+
+    <p>3.1. In these Terms, Intellectual Property Rights mean copyright (including design copyrights), trade marks, patent, database and other intellectual property rights and similar proprietary rights which include (without limitation) those subsisting in inventions, drawings, images, performances, computer programs, domain names, confidential information, business names, trade names or get-up.</p>
+
+    <p>3.2. The software code contained in and related to the Website and the materials on the Website including text, images, videos, photographs and other materials are protected by Intellectual Property Rights. All such rights are reserved.</p>
+
+    <p>3.3. Subject to clause 4, you may:</p>
+    <ul>
+      <li>retrieve and display materials on the Website on a computer screen;</li>
+      <li>download and store in electronic form materials on the Website; and</li>
+      <li>copy and print one copy only of materials on the Website.</li>
+    </ul>
+
+    <p>3.4. Copying, downloading, storing or printing the materials on the Website for any reason other than personal use or in accordance with clause 4.2(b) is expressly prohibited.</p>
+
+    <p>3.5. You agree that you will not (and will not assist or facilitate any third party to) otherwise reproduce, modify, copy, distribute, transmit, publish, display, commercially exploit or create derivative works from any material or content on the Website.</p>
+
+    <p>3.6. No licence is granted to you to use any of our trade marks or those of our affiliated companies.</p>
+
+    <p>3.7. You agree that you will not use our Intellectual Property Rights in any way other than allowed under these Terms and any infringement by you of our Intellectual Property Rights will be a breach of these Terms and may result in legal proceedings being commenced against you.</p>
+
+    <h2>4. Use of the Website</h2>
+
+    <p>4.1. You are permitted to use the Website and the material contained in it only as expressly authorised by us and in accordance with these Terms as may be amended from time to time without notice to you.</p>
+
+    <p>4.2. Provided that you comply with the other provisions of this clause, you may download or print one copy only of pages of our website:</p>
+    <ul>
+      <li>(a) for your own private use; or</li>
+      <li>(b) to draw attention to the content of our website to members of your organisation.</li>
+    </ul>
+
+    <p>4.3. You must not:</p>
+    <ul>
+      <li>(a) download or print pages of the Website for commercial use other than use permitted by clause 4.2(b);</li>
+      <li>(b) alter the content of any webpage you download or print; or</li>
+      <li>(c) use any images, videos or photographs on the webpage without the accompanying text.</li>
+    </ul>
+
+    <p>4.4. You must:</p>
+    <ul>
+      <li>(a) keep intact all and any copyright and proprietary notices accompanying or attached to the materials on the Website you download, copy, store or print;</li>
+      <li>(b) acknowledge us as the owners of the content of the Website;</li>
+      <li>(c) erase any pages of the Website or materials on those pages downloaded other than in accordance with this clause; and</li>
+      <li>(d) destroy any pages of the Website or materials on those pages printed other than in accordance with this clause.</li>
+    </ul>
+
+    <p>4.5. You must not modify, adapt, translate, reverse engineer, decompile or disassemble any code or program used by or in connection with the Website. You must contact us to request our consent if you wish to link to any page of this Website.</p>
+
+    <p>4.6. We provide access to and use of the Website on the basis that we exclude all representations, warranties and conditions to the maximum extent permitted by law.</p>
+
+    <p>4.7. We reserve the right to:</p>
+    <ul>
+      <li>(a) make changes to the information or materials on this Website at any time;</li>
+      <li>(b) temporarily or permanently change, suspend or discontinue any aspect of the Website, including the availability of any features, information, database or content or restrict access to parts of or the entire Website, with or without notice to you; and</li>
+      <li>(c) refuse to post material on the Website or to remove material already posted on the Website.</li>
+    </ul>
+
+    <p>4.8. You may not use the Website for any of the following purposes:</p>
+    <ul>
+      <li>disseminating any unlawful, harassing, libellous, abusive, threatening, fraudulent, malicious, harmful, vulgar, obscene, or otherwise objectionable material;</li>
+      <li>stalking, harassing, threatening, blackmailing any person or violating or interfering with the rights of any other person including their right to privacy;</li>
+      <li>transmitting material that encourages conduct that constitutes a criminal offence, results in civil liability or otherwise;</li>
+      <li>breaching any applicable local, national or international laws, regulations or code of practice;</li>
+      <li>gaining unauthorised access to other computer systems;</li>
+      <li>interfering with any other person's use or enjoyment of the Website;</li>
+      <li>breaching any laws concerning the use of public telecommunications networks;</li>
+      <li>interfering with, disrupting or damaging networks or websites connected to the Website;</li>
+      <li>utilisation of data mining, robots or similar data gathering and extraction tools to extract for re-utilisation any substantial parts of the Website;</li>
+      <li>transmitting, or procuring the sending of, any unsolicited or unauthorised advertising or promotional material or any other form of similar solicitation;</li>
+      <li>creating and/or publishing your own database that features all or substantial parts of the Website or its contents;</li>
+      <li>making, transmitting or storing electronic copies of materials protected by copyright without the prior permission of the owner; or</li>
+      <li>selling or re-selling or using for commercial purposes any of the content of or access to the Website.</li>
+    </ul>
+
+    <p>4.9. In addition, you must not:</p>
+    <ul>
+      <li>knowingly introduce viruses, Trojans, worms, logic bombs, keystroke loggers, spyware, adware or other material which is malicious or technologically harmful to the Website;</li>
+      <li>impersonate any other person or fraudulently provide us with incorrect information;</li>
+      <li>attempt to gain unauthorised access to the Website, the server on which the Website is stored or any server, computer or database connected to it;</li>
+      <li>attack the Website via a denial-of-service attack or a distributed denial-of-service attack;</li>
+      <li>damage, disrupt or interfere with any part of the Website, any equipment or network on which the Website is stored or any software used for the provision of the Website; or</li>
+      <li>remove any copyright notice or notice of any other intellectual property right from the Website or any materials on the Website.</li>
+    </ul>
+
+    <p>4.10. A breach of clause 4.8 or 4.9 may be a criminal offence under the Computer Misuse Act 1990. We may report any such breach to the relevant law enforcement authorities and disclose your identity to them. In the event of such a breach, your right to use the Website will cease immediately.</p>
+
+    <h2>5. Suspending or Terminating Your Access</h2>
+
+    <p>We reserve the right to terminate or suspend your access to the Website immediately and without notice to you if:</p>
+    <ul>
+      <li>5.1. you breach these Terms (repeatedly or otherwise);</li>
+      <li>5.2. you are impersonating any other person or entity;</li>
+      <li>5.3. when requested by us to do so, you fail to provide us within a reasonable time with sufficient information to enable us to determine the accuracy and validity of any information supplied by you, or your identity; or</li>
+      <li>5.4. we suspect you have engaged, or are about to engage, or have in any way been involved, in fraudulent, defamatory or illegal activity on the Website.</li>
+    </ul>
+
+    <h2>6. Linking to the Website</h2>
+
+    <p>6.1. You must not create a link to the Website from another website, document or any other source without first obtaining our prior written consent.</p>
+
+    <p>6.2. Any agreed link must:</p>
+    <ul>
+      <li>(a) be to the Website's homepage and not to any other page on the Website;</li>
+      <li>(b) be established from a website or document that is owned by you and does not contain content that is offensive, controversial, defamatory, infringes any intellectual property rights or other rights of any person or does not comply in any way with the law in the United Kingdom and the law in any country from which it is hosted;</li>
+      <li>(c) be provided in such a way that is fair and legal and does not damage our reputation or take advantage of it;</li>
+      <li>(d) not suggest any form of association, approval or endorsement on our part where none exists;</li>
+      <li>(e) not cause the Website or content on the Website to be embedded in or 'framed' by any other website; and</li>
+      <li>(f) not cause the content of the Website to be displayed differently from the way it appears on the Website.</li>
+    </ul>
+
+    <p>6.3. We have no obligation to inform you if the address of the Website home page changes and it is your responsibility to ensure that any link you provide to our homepage is at all times accurate.</p>
+
+    <p>6.4. We reserve the right to withdraw our consent without notice and without providing any reasons for withdrawal. Upon receiving such notice you must immediately remove the link and inform us once this has been done.</p>
+
+    <h2>7. External Links</h2>
+
+    <p>To provide increased value and convenience to our users, we may provide links to other websites or resources for you to access at your sole discretion and risk. You acknowledge and agree that, as you have chosen to enter those linked websites, we are not responsible for the availability of such external sites or resources, and do not review or endorse and are not responsible or liable, directly or indirectly, for:</p>
+    <ul>
+      <li>the privacy practices of such websites;</li>
+      <li>the content of such websites, including (without limitation) any advertising, content, products, goods or other materials or services on or available from such websites or resources;</li>
+      <li>the use which others make of these websites; or</li>
+      <li>any damage, loss or offence caused or alleged to be caused to you, arising from or in connection with the use of or reliance upon any such advertising, content, products, goods, materials or services available on such external websites or resources.</li>
+    </ul>
+
+    <h2>8. Disclaimer</h2>
+
+    <p>8.1. The content on the Website is provided for general information only. It is not intended to be advice on which you should rely. It shall be your responsibility to ensure that any products, services or information available through the Website meet your specific requirements.</p>
+
+    <p>8.2. We attempt to ensure that the information available on the Website at any time is accurate. However, we do not guarantee the accuracy or completeness of material on this Website. We use all reasonable endeavours to correct errors and omissions as quickly as practicable after becoming aware or being notified of these.</p>
+
+    <p>8.3. The Website is provided on an 'as is' and 'as available' basis without any representation or endorsement made and we make no warranties or guarantees, whether express or implied, statutory or otherwise unless expressly stated, including but not limited to implied warranties of satisfactory quality, fitness for a particular purpose, non-infringement, compatibility, security and accuracy.</p>
+
+    <p>8.4. We make no representation or warranty of any kind express or implied statutory or otherwise regarding the availability of the Website or that it will be timely or error-free, that defects will be corrected, or that the site or the server that makes it available are free of viruses or bugs or represents the full functionality, accuracy, reliability of the Website.</p>
+
+    <p>8.5. We will not be responsible or liable to you for any loss of content or material uploaded or transmitted through the Website and we accept no liability of any kind for any loss or damage from action taken in reliance on material or information contained on the Website.</p>
+
+    <p>8.6. You are responsible for maintaining appropriate anti-virus software on and appropriately configuring the technological devices, platform and computer programs you use to access the Website that are in your possession.</p>
+
+    <h2>9. Limitation of Liability and Indemnity</h2>
+
+    <p>9.1. If you are a consumer, nothing in these Terms affects your legal rights. You can obtain advice about your legal rights from Citizens Advice if you need to.</p>
+
+    <p>9.2. We cannot exclude or limit our responsibility to you for:</p>
+    <ul>
+      <li>(a) death or personal injury resulting from our negligence;</li>
+      <li>(b) fraud or fraudulent misrepresentation;</li>
+      <li>(c) action pursuant to section 2(3) of the Consumer Protection Act 1987;</li>
+      <li>(d) any liability, right or remedy which we cannot exclude or limit pursuant to the Consumer Rights Act 2015; or</li>
+      <li>(e) any other matter for which it would be unlawful for us to exclude or attempt to exclude our liability.</li>
+    </ul>
+
+    <p>9.3. We will not be liable, in contract or tort (including, without limitation, negligence), or in respect of pre-contract or other representations (other than fraudulent or negligent misrepresentations) or otherwise arising out of or in connection with these Terms for any of the following types of loss or damage, even if we have been advised of the possibility of such loss:</p>
+    <ul>
+      <li>(a) any economic losses (including without limitation loss of revenues, profits, contracts, business or anticipated savings);</li>
+      <li>(b) any loss of goodwill or reputation;</li>
+      <li>(c) any special or indirect losses;</li>
+      <li>(d) any loss of data;</li>
+      <li>(e) wasted management or office time; or</li>
+      <li>(f) any other loss or damage of any kind.</li>
+    </ul>
+
+    <p>9.4. If you are not a consumer we exclude all liability, including any liability in negligence, arising from your use or inability to access or use the Website other than that referred to in clause 9.2.</p>
+
+    <p>9.5. If you are a consumer, we are responsible for foreseeable loss or damage which you suffer as a result of a breach by us of the Terms or as a result of our failure to act with reasonable care and skill, but we are not responsible for any loss or damage that is not foreseeable.</p>
+
+    <p>9.6. If you are not a consumer you agree to fully indemnify, defend and hold us, our officers, directors, employees and suppliers, harmless immediately on demand, from and against all claims, including but not limited to losses (including loss of profit, revenue, goodwill or reputation), costs and expenses, including reasonable administrative and legal costs, arising out of any breach of these Terms by you, or any other liabilities arising out of your use of this Website, or the use by any other person accessing the Website using your internet connection.</p>
+
+    <p>9.7. If you are a consumer you agree to fully reimburse us, our officers, directors, employees and suppliers for all losses (including loss of profit, revenue, goodwill or reputation), costs and expenses, including reasonable administrative and legal costs, arising out of any breach of these Terms by you.</p>
+
+    <h2>10. Use of Personal Data</h2>
+
+    <p>10.1. We envisage that we will request personal information from you whilst you use our website. This information will only be requested and processed in accordance with our <a href="/privacy-policy/">Privacy &amp; Cookie Notice</a>.</p>
+
+    <p>10.2. In brief, we will act fairly in connection with personal information requested from you; when we request information we will alert you to our Privacy &amp; Cookie Notice; and unless the information is necessary for a reason specified in the UK General Data Protection Regulation (UK GDPR), we will not retain personal data for longer than the time required to process your request.</p>
+
+    <h2>11. Cookies</h2>
+
+    <p>This website makes use of cookies: text files containing small amounts of information which are downloaded to your device when you visit a website. The website can subsequently retrieve the cookie, which provides useful information. For more information about how we use cookies, please see our <a href="/privacy-policy/">Privacy &amp; Cookie Notice</a>.</p>
+
+    <h2>12. General</h2>
+
+    <p>12.1. We reserve the right to change the domain address of this Website and any services, products, product prices, product specifications and availability at any time.</p>
+
+    <p>12.2. Each of the sub-clauses of these Terms should be considered separately. If any of these Terms are found to be unenforceable, invalid or illegal, the rest of these Terms will continue to have full effect.</p>
+
+    <p>12.3. These Terms are in English only.</p>
+
+    <p>12.4. We will not lose our rights under these Terms by reason of any delay by us in enforcing those rights. We will not be bound by any agreement not to enforce our rights under these Terms unless we have agreed not to do so in writing.</p>
+
+    <p>12.5. Any delay by us in enforcing our rights, non-enforcement of our rights or agreement not to enforce our rights in respect of one breach by you of these Terms will not prevent us from fully enforcing our rights in respect of any other breach by you of these Terms.</p>
+
+    <h2>13. Governing Law and Jurisdiction</h2>
+
+    <p>13.1. The Website is controlled and operated in the United Kingdom.</p>
+
+    <p>13.2. If you are a business, these Terms are governed by the laws of England and Wales and the courts of England and Wales shall have exclusive jurisdiction over legal proceedings in connection with your use of the Website, any breach of these Terms and any disputes that arise in relation to it.</p>
+
+    <p>13.3. If you are a consumer, these Terms are governed by the laws of England and Wales and you can bring legal proceedings in the courts of England and Wales. If you live in Scotland you can bring legal proceedings in either the courts of Scotland or England and Wales. If you live in Northern Ireland you can bring legal proceedings in either the courts of Northern Ireland or England and Wales.</p>
+
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;" aria-hidden="true">
+        <g>
+          <polygon class="ha-icon-amber" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/>
+          <path style="fill:var(--black)" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/>
+        </g>
+        <g>
+          <path class="ha-icon-olive" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/>
+          <path style="fill:var(--black)" d="M47.61,19.03l42.59,76.84-13.52,8.09v-10.82s0-1.76,0-1.76l-1.51.91-18,10.78-.49.29v12.59l-9.14,5.47.06-102.38M55.88,91.93l1.51-.91,16.67-9.98.83-.5-.47-.85-16.64-30.02-1.87-3.38v3.86s-.03,40-.03,40v1.76M46.61,15.17l-.07,108,11.14-6.67v-12.59l18-10.78v12.59s15.86-9.5,15.86-9.5L46.61,15.17h0ZM56.88,90.17l.02-40,16.64,30.02-16.67,9.98h0Z"/>
+        </g>
+      </svg>
+      <div class="footer-copy">
+        <p>&copy; 2026 Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Company No. 17158689</p>
+        <p style="margin-top:6px">
+          <a href="/">Waitlist</a> &nbsp;&middot;&nbsp; <a href="/privacy-policy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/legal-notice/">Legal Notice</a>
+        </p>
+      </div>
+      <div class="footer-spacer"></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('hamburger');
+      var drop = document.getElementById('nav-dropdown');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = btn.classList.toggle('active');
+        drop.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        drop.setAttribute('aria-hidden', !open);
+      });
+      document.addEventListener('click', function (e) {
+        if (!btn.contains(e.target) && !drop.contains(e.target)) {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-hidden', 'true');
+          btn.focus();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

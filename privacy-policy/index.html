@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.55 123.17'%3E%3Cpolygon fill='%23c8860a' points='34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48'/%3E%3Cpath fill='%233d4a2e' d='M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z'/%3E%3C%2Fsvg%3E" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/privacy-policy/" />
+  <meta property="og:title" content="Privacy &amp; Cookie Notice — Hotshots Airsoft" />
+  <meta property="og:description" content="How Hotshots Airsoft collects, uses and protects your personal information and cookies." />
+  <meta property="og:image" content="https://www.hotshotsairsoft.co.uk/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy &amp; Cookie Notice — Hotshots Airsoft" />
+  <meta name="twitter:description" content="How Hotshots Airsoft collects, uses and protects your personal information and cookies." />
+  <meta name="description" content="How Hotshots Airsoft collects, uses and protects your personal information and cookies." />
+  <title>Privacy &amp; Cookie Notice — Hotshots Airsoft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+    html { scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --olive: #3D4A2E; --olive-dim: #2C361F; --earth: #8B7355;
+      --amber: #C8860A; --smoke: #F5F3EE; --ash: #9A9A8A;
+      --black: #0D0F0A; --dark: #131510; --card: #1B1F17;
+      --card2: #20241B; --border: #2D3325; --muted: #9A9A8A; --radius: 2px;
+    }
+    body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.2); padding: 18px 24px; display: flex; align-items: center; gap: 12px; background: rgba(200,134,10,0.97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 6px 10px; border: 2px solid #000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
+    .logo-home-btn:hover { opacity: 0.75; }
+    .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
+    .ha-wm-ff   { font-family: 'Headline Gothic ATF','HeadlineGothicATF','Bebas Neue',serif; }
+    .ha-wm-sp   { font-size: 12.14px; letter-spacing: 0em; }
+    .ha-wm-amber{ fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
+    .ha-wm-olive{ fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
+    .ha-wm-bg   { fill: #000000; }
+    .ha-icon-amber { fill: #c8860a; }
+    .ha-icon-olive { fill: #3d4a2e; }
+    .hamburger { background: none; border: none; cursor: pointer; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .hamburger span { display: block; height: 2px; background: #000; border-radius: 1px; transition: width 0.35s cubic-bezier(0.23,1,0.32,1), background 0.2s; }
+    .hamburger span:nth-child(1) { width: 24px; }
+    .hamburger span:nth-child(2) { width: 24px; }
+    .hamburger span:nth-child(3) { width: 24px; }
+    .hamburger.active span:nth-child(1) { width: 24px; }
+    .hamburger.active span:nth-child(2) { width: 14px; }
+    .hamburger.active span:nth-child(3) { width: 4px; }
+    .nav-dropdown { position: absolute; top: calc(100% + 10px); right: 0; background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--amber); min-width: 160px; border-radius: 2px; opacity: 0; transform: translateY(-6px); pointer-events: none; transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200; }
+    .nav-dropdown.open { opacity: 1; transform: translateY(0); pointer-events: all; }
+    .nav-dropdown a { display: block; padding: 13px 20px; font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover { color: var(--amber); background: rgba(200,134,10,0.05); }
+    .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow',Arial,sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .skip-link:focus { left: 8px; }
+    .content { max-width: 700px; margin: 0 auto; padding: 52px 24px 80px; }
+    .page-title { font-family: 'Bebas Neue',Arial,sans-serif; font-size: clamp(32px,5vw,52px); letter-spacing: 3px; text-transform: uppercase; line-height: 1.0; margin-bottom: 10px; }
+    .page-meta { font-family: 'Barlow',Arial,sans-serif; font-size: 13px; color: var(--ash); margin-bottom: 36px; }
+    h2 { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--ash); margin-top: 44px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    p { font-size: 15px; color: #C8C4BC; margin-bottom: 14px; line-height: 1.7; }
+    ul, ol { margin: 0 0 16px 22px; }
+    li { font-size: 15px; color: #C8C4BC; margin-bottom: 7px; line-height: 1.6; }
+    a { color: var(--earth); text-decoration: underline; }
+    a:hover { color: var(--amber); }
+    strong { color: var(--smoke); font-weight: 600; }
+    .company-card { background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--olive); border-radius: 2px; padding: 20px 24px; margin-bottom: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .company-field { display: flex; flex-direction: column; gap: 4px; }
+    .company-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--ash); }
+    .company-value { font-family: 'Barlow',Arial,sans-serif; font-size: 14px; color: var(--smoke); }
+    .company-value a { color: var(--earth); }
+    .notice-box { background: var(--card); border: 1px solid var(--border); border-left: 2px solid var(--olive); border-radius: 2px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #B8B4AC; line-height: 1.6; }
+    table { width: 100%; border-collapse: collapse; margin: 0 0 28px; font-size: 14px; }
+    th { background: var(--card); color: var(--ash); font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+    td { padding: 12px 14px; border: 1px solid var(--border); color: #C8C4BC; vertical-align: top; line-height: 1.6; }
+    footer { text-align: center; padding: 40px 24px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; margin-top: 40px; }
+    footer a { color: var(--muted); text-decoration: underline; }
+    .footer-inner { display: flex; align-items: center; gap: 28px; }
+    .footer-icon { flex-shrink: 0; opacity: 0.5; }
+    .footer-copy { flex: 1; text-align: center; }
+    .footer-spacer { flex-shrink: 0; width: 44px; }
+    .social-section { max-width: 560px; margin: 60px auto 0; padding: 0 24px; text-align: center; }
+    .social-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ash); margin-bottom: 20px; }
+    .social-label::before, .social-label::after { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--border); vertical-align: middle; margin: 0 12px; }
+    .social-icons { display: flex; justify-content: center; gap: 16px; }
+    .social-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; color: var(--ash); text-decoration: none; transition: color 0.2s, border-color 0.2s, background 0.2s; }
+    .social-icon:hover { color: var(--amber); border-color: var(--amber); background: rgba(200,134,10,0.06); }
+    .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+    .social-tagline { margin-top: 16px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
+    @media (max-width: 520px) { .company-card { grid-template-columns: 1fr; } }
+    </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RGF1630YKT');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x16wb0jmp2");
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a href="/" class="logo-home-btn" aria-label="Hotshots Airsoft — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.77 52.02" style="height:44px;width:auto;" aria-hidden="true">
+        <path class="ha-wm-bg" d="M78.49,7.08c-.68-.75-1.93-1.65-4.04-1.65-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.02.27c-.59-.22-1.28-.36-2.12-.36-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.16,2.12-.13,1.74-1.18,13.57-.17,1.71-.3,3,3.01-.26,3.27-.29,2.12-.19h0s2.96-.26,2.96-.26l2.12-.19.04-.53c.68.31,1.56.54,2.69.54.27,0,.54-.01.82-.04,1.11-.1,2.09-.39,2.95-.82l-3.24,10.97-1.04,3.52,3.65-.32,2.06-.18.59-.05,1.77-.15,2.18-.19.71-.06h0s1.89-.17,1.89-.17h0s.36-.03.36-.03l1.76-.15h0s1.17-.1,1.17-.1l1-.09.44-.04,2.14-.19,1.61-.14c.3.06.63.1.98.1.17,0,.35,0,.54-.02,1.2-.11,2.24-.53,3.09-1.2.6.37,1.43.66,2.58.66.2,0,.41,0,.62-.03.6-.05,1.11-.17,1.57-.33l2.26-.2,2.18-.19,2.12-.19h0s1.85-.16,1.85-.16l2.18-.19,2.12-.18.16-2.12.08-1.16.54-6.18,1.5-.13.18-2.09.17-1.93.04-.45,2.93-.26,2.12-.19.11-1.52c.76.72,2,1.45,3.92,1.45.23,0,.46-.01.7-.03,3.9-.34,6.55-3.26,6.93-7.62.21-2.46-.4-4.1-1.29-5.26l1.63-.14.22-2.05c.28-2.71-.17-4.68-1.38-6.03Z"/>
+        <text class="ha-wm-ff" transform="translate(2.9 30.79) rotate(-5) scale(.99) skewX(-9.89)">
+          <tspan class="ha-wm-amber" x="0" y="0">HOTSHOTS</tspan>
+          <tspan class="ha-wm-sp" x="74.68" y="0"> </tspan>
+          <tspan class="ha-wm-olive"><tspan x="18.63" y="14">AIRSOFT</tspan></tspan>
+        </text>
+      </svg>
+    </a>
+    <div class="header-divider"></div>
+    <nav style="margin-left:auto;position:relative;">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-dropdown">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
+        <a href="/about/" role="menuitem">About Us</a>
+        <a href="mailto:info@hotshotsairsoft.co.uk" role="menuitem">Contact Us</a>
+        <a href="/#waitlist" role="menuitem">Join Waitlist</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+  <div class="content">
+
+    <h1 class="page-title">Privacy &amp; Cookie Notice</h1>
+    <p class="page-meta">Last updated: 26 June 2026 &nbsp;&middot;&nbsp; Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; ICO Registration: ZC149884</p>
+
+    <div class="notice-box">
+      <strong>Plain English Summary:</strong> Hotshots Airsoft Ltd is committed to protecting your privacy. We collect your personal information only where necessary — to manage waitlist sign-ups, conduct market research, and (when we open for bookings) to process reservations and ensure participant safety. We do not sell your data or use it for marketing without your explicit consent. The full detail is below.
+    </div>
+
+    <p><a href="https://www.hotshotsairsoft.co.uk">https://www.hotshotsairsoft.co.uk</a> (the <strong>'Website'</strong>) is provided by Hotshots Airsoft Ltd (<strong>'we'</strong>/<strong>'us'</strong>/<strong>'our'</strong>). In doing so, we may be in a position to receive and process personal information relating to you. As the controller of this information, we're providing this Privacy &amp; Cookie Notice (<strong>'Notice'</strong>) to explain our approach to personal information.</p>
+
+    <p>We intend only to process personal information fairly and transparently as required by data protection law including the UK General Data Protection Regulation (<strong>'UK GDPR'</strong>). In particular, before obtaining information from you (including through use of cookies) we intend to alert you to this Notice, let you know how to access it and to make sure you know you can opt-out of some of the things we might use your data for.</p>
+
+    <p>Of course, you may browse parts of this Website without providing any information about yourself and without accepting cookies. In that case, it's unlikely we'll possess and process any information relating to you.</p>
+
+    <p>You may wish to start with the table at clause 4, which summarises what we intend to collect, or the table at clause 8.5, which summarises our use of cookies.</p>
+
+    <h2>1. Identity and Contact Details</h2>
+
+    <div class="company-card">
+      <div class="company-field">
+        <div class="company-label">Registered Number</div>
+        <div class="company-value">17158689</div>
+      </div>
+      <div class="company-field">
+        <div class="company-label">Registered Office</div>
+        <div class="company-value">124-128 City Road, London, EC1V 2NX</div>
+      </div>
+      <div class="company-field">
+        <div class="company-label">ICO Registration</div>
+        <div class="company-value">ZC149884</div>
+      </div>
+      <div class="company-field">
+        <div class="company-label">Data Protection Officer</div>
+        <div class="company-value"><a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a></div>
+      </div>
+    </div>
+
+    <p>Our Data Protection Officer (DPO) would welcome communication from you regarding any matter relating to data protection, and can be contacted by email at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>.</p>
+
+    <h2>2. When We're Allowed to Collect Information From You</h2>
+
+    <p>We will only collect personal information relating to you if one of the following conditions has been satisfied:</p>
+    <ul>
+      <li>2.1. You have clearly told us that you are content for us to collect that information for the particular purpose or purposes that we will have specified.</li>
+      <li>2.2. The processing is necessary for the performance of a contract that we have with you.</li>
+      <li>2.3. The processing is necessary so that we can comply with the law.</li>
+      <li>2.4. The processing is necessary to protect someone's life.</li>
+      <li>2.5. The processing is necessary for the performance of a task that's in the public interest.</li>
+      <li>2.6. The processing is necessary for a recognised legitimate interest; or our or another's non-recognised legitimate interests — but in this case, we'll balance those interests against your interests.</li>
+    </ul>
+
+    <h2>3. How to Consent</h2>
+
+    <p>3.1. If we need your consent to collect and use certain information, we'll provide you with the opportunity to tell us that you're happy to provide that information at the point of collecting it.</p>
+
+    <p>3.2. If at any point in time you change your mind and decide that you want to withdraw your consent, please let us know and we'll endeavour to stop processing your information in the specified manner, or we'll delete your data if there is no continuing reason for possessing it.</p>
+
+    <p>3.3. If you don't consent to a particular bit of processing, we'll endeavour to ensure that the Website and our service continue to operate without the need for that information.</p>
+
+    <h2>4. Information We Expect to Collect From You</h2>
+
+    <p>4.1. We envisage collecting the following types of information from you:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Information type</th>
+          <th>Purpose and related details</th>
+          <th>Justification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Identity data</strong><br>First name, last name, date of birth</td>
+          <td>To identify individuals on the waitlist and at events; to complete participant waivers and verify age eligibility.<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>We'll ask for your consent</td>
+        </tr>
+        <tr>
+          <td><strong>Contact data</strong><br>Email address, phone number, home address</td>
+          <td>To send a single launch notification (email); to confirm and manage event bookings.<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>We'll ask for your consent</td>
+        </tr>
+        <tr>
+          <td><strong>Professional data</strong><br>Company name</td>
+          <td>To understand the proportion of corporate/B2B enquiries and segment demand.<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>Legitimate interest: understanding the proportion of corporate and private group enquiries in order to inform product development, pricing, and go-to-market decisions before launch</td>
+        </tr>
+        <tr>
+          <td><strong>Marketing &amp; analytics data</strong><br>How they heard about us</td>
+          <td>To identify which channels are driving awareness and inform marketing spend decisions.<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>Legitimate interest: identifying which channels are generating awareness of the business in order to allocate pre-launch marketing resources effectively</td>
+        </tr>
+        <tr>
+          <td><strong>Legal &amp; contractual records</strong><br>Signed participant waiver, site liability agreement</td>
+          <td>To evidence that participants accepted liability terms before taking part; to record site conditions for safety and insurance purposes.<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>Necessary for the performance of a contract with you</td>
+        </tr>
+        <tr>
+          <td><strong>Health data</strong><br>Medical screening responses from participant waiver</td>
+          <td>To assess whether a participant has any condition that may affect safe participation; collected under explicit consent (UK GDPR Article 9(2)(a)).<br><br><em>This information may be transferred to the recipient in the USA under the UK-US Extension to the EU-US Data Privacy Framework.</em></td>
+          <td>We'll ask for your consent</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>4.2. We may collect personal information about you from a number of sources, including the following:</p>
+    <ul>
+      <li>From you when you agree to take a service or product from us, in which case this may include your contact details and how you will pay for the product or service.</li>
+      <li>From you when you contact us with an enquiry or in response to a communication from us, in which case, this may tell us something about how you use our services.</li>
+      <li>As you interact with this Website, we may automatically collect technical information about your equipment, browsing actions and patterns (such as your internet protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform and other technology on the devices you use to access this website).</li>
+      <li>From documents that are available to the public, such as the electoral register.</li>
+      <li>From third parties to whom you have provided information with your consent to pass it on to other organisations or persons — when we receive such information we will let you know as soon as is reasonably practicable.</li>
+    </ul>
+
+    <p>4.3. <strong>Event and booking data (pre-launch).</strong> When we open for bookings, all participants will be required to complete and sign a <strong>Participant Waiver and Release of Liability</strong> before taking part in any activity. This records your name, date of birth, email address, telephone number, and signature, and includes a <strong>medical screening questionnaire</strong> covering conditions that may affect safe participation. This medical information constitutes <strong>special category personal data under UK GDPR Article 9</strong> (health data). We collect it under Article 9(2)(a) — your <strong>explicit consent</strong>, given freely at the point of signing, for the purpose of ensuring your safety and the safety of other participants. Physical waivers are stored in a locked file accessible only by authorised personnel.</p>
+
+    <p>4.4. For site-based events, the person or organisation providing the venue will be required to sign a <strong>Customer Site Liability Agreement</strong> prior to the session. This records the site owner's name, contact number, site address, and declared hazards. This is a commercial record processed under our legitimate interests in documenting site conditions for safety and insurance purposes.</p>
+
+    <p>4.5. If you refuse to provide information requested, and that information is necessary for a service we provide to you, we may need to stop providing that service.</p>
+
+    <p>4.6. If at any point you think we've invited you to provide information without explaining why, feel free to object and ask for our reasons.</p>
+
+    <h2>5. Using Your Personal Information</h2>
+
+    <p>5.1. Data protection, privacy and security are important to us, and we shall only use your personal information for specified purposes and shall not keep such personal information longer than is necessary to fulfil these purposes. Examples of the ways in which we use personal information include:</p>
+    <ul>
+      <li>To notify waitlist members when bookings open (single notification email).</li>
+      <li>To conduct anonymised internal analysis of market research responses.</li>
+      <li>To process and manage event bookings and communicate with you about your reservation.</li>
+      <li>To ensure compliance with safety regulations and maintain a safe environment for all participants.</li>
+      <li>To fulfil our legal and insurance obligations in relation to participant waivers.</li>
+      <li>To help to prevent and detect fraud or loss.</li>
+    </ul>
+
+    <p>5.2. We will not use your personal data for marketing purposes unless you have explicitly consented. You may withdraw that consent at any time by emailing <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>.</p>
+
+    <p>5.3. We will not disclose your personal information to any third party except in accordance with this Notice, and then only in one of the following circumstances:</p>
+    <ul>
+      <li>They will be processing the data on our behalf as a data processor (where we'll be the data controller). In that situation, we'll always have a contract with the data processor as set out in the UK GDPR.</li>
+      <li>Sometimes it might be necessary to share data with another data controller. Before doing that we'll always tell you.</li>
+      <li>We have been legitimately asked to provide information for legal or regulatory purposes or as part of legal proceedings or prospective legal proceedings.</li>
+    </ul>
+
+    <p>5.4. We do not sell your data to third parties. We do not share it with advertisers or marketing agencies. Your data may be processed by the following third parties, each operating under a Data Processing Agreement with Hotshots Airsoft Ltd:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Processor</th>
+          <th>What they handle</th>
+          <th>Location</th>
+          <th>DPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tally</strong><br><a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></td>
+          <td>Waitlist sign-up form submissions and market research survey responses</td>
+          <td>European Union — no international transfer</td>
+          <td>Auto-activated on account creation</td>
+        </tr>
+        <tr>
+          <td><strong>Booking &amp; payment processor</strong><br><em>To be confirmed prior to launch</em></td>
+          <td>Event bookings and payment processing</td>
+          <td>To be confirmed</td>
+          <td>To be confirmed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>5.5. We may allow other people and organisations to use personal information we hold about you if we, or substantially all of our assets, are acquired by a third party, in which case personal information held by us about our customers will be one of the transferred assets.</p>
+
+    <h2>6. Protecting Information</h2>
+
+    <p>6.1. We have strict security measures to protect personal information.</p>
+
+    <p>6.2. We work to protect the security of your information during transmission by using Secure Sockets Layer (SSL) software to encrypt information you input.</p>
+
+    <p>6.3. We maintain physical, electronic and procedural safeguards in connection with the collection, storage and disclosure of personally identifiable customer information. Our security procedures mean that we may occasionally request proof of identity before we disclose personal information to you. Physical records (including signed participant waivers) are stored in a locked file accessible only by authorised personnel.</p>
+
+    <p>6.4. It is important for you to protect against unauthorised access to your password and to your computer. Be sure to sign off when you finish using a shared computer.</p>
+
+    <h2>7. The Internet</h2>
+
+    <p>7.1. If you communicate with us using the internet, we may occasionally email you about our services and products. When you first give us personal information through the Website, we will normally give you the opportunity to say whether you would prefer us not to contact you by email. You can also unsubscribe at any time by following the instructions within the email.</p>
+
+    <p>7.2. Please remember that communications over the internet, such as emails and webmails (messages sent through a website), are not secure unless they have been encrypted. Your communications may go through a number of countries before they are delivered — this is the nature of the internet. We cannot accept responsibility for any unauthorised access or loss of personal information that is beyond our control.</p>
+
+    <h2>8. Cookies and Other Internet Tracking Technology</h2>
+
+    <p>8.1. When we provide services, we want to make them easy, useful and reliable. This sometimes involves placing small amounts of information on your computer, which is sent back to us at a later time. These are called 'cookies'. These cookies are listed in the table at clause 8.5.</p>
+
+    <p>8.2. Where applicable, this section of the Notice also relates to that technology but the term 'cookie' is used throughout.</p>
+
+    <p>8.3. Some of these cookies are essential to services you've requested from us, whereas others are used to improve services for you, for example through:</p>
+    <ul>
+      <li>letting you navigate between pages efficiently;</li>
+      <li>enabling a service to recognise your computer so you don't have to give the same information during one task;</li>
+      <li>recognising that you have already given a username and password so you don't need to enter it for every web page requested; and</li>
+      <li>measuring how many people are using services, so they can be made easier to use and that there is enough capacity to ensure they are fast.</li>
+    </ul>
+
+    <p>8.4. To learn more about cookies, you may wish to visit: <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">www.allaboutcookies.org</a>, <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener">www.youronlinechoices.eu</a> or <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Google's cookie policy</a>.</p>
+
+    <p>8.5. This Website uses, or allows use of, the following cookies:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cookie name</th>
+          <th>Cookie qualities</th>
+          <th>Consent needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Google Analytics 4</strong></td>
+          <td>
+            Tracks page views, session data, device type, approximate location, and user behaviour to measure site performance.<br><br>
+            <strong>Category 2</strong> — performance (statistical purposes exception applies)<br>
+            <strong>Third party</strong>: another website is placing the cookie<br>
+            <strong>Persistent</strong>: _ga lasts 2 years; _ga_* lasts 2 years
+          </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td><strong>Microsoft Clarity</strong></td>
+          <td>
+            Records session behaviour including heatmaps and scroll patterns.<br><br>
+            <strong>Category 2</strong> — performance (statistical purposes exception applies)<br>
+            <strong>Third party</strong>: another website is placing the cookie<br>
+            <strong>Persistent/session</strong>: _clck lasts 1 year; _clsk is session
+          </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td><strong>Tally</strong></td>
+          <td>
+            Strictly necessary to process form submissions. Not used for tracking or advertising.<br><br>
+            <strong>Category 3</strong> — functionality<br>
+            <strong>Third party</strong>: another website is placing the cookie<br>
+            <strong>Session cookie</strong>
+          </td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>8.6. The distinctions referred to in the above table are as follows:</p>
+    <ul>
+      <li><strong>First party versus third party cookies</strong> — we set first party cookies ourselves; third party cookies are set by other entities via our Website.</li>
+      <li><strong>Session versus persistent cookies</strong> — session cookies only persist for the duration of that visit; persistent cookies last for longer.</li>
+      <li>Categories 1–4 are explained below.</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Category 1</strong></td>
+          <td>Strictly necessary</td>
+          <td>These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. Without these cookies services you have asked for cannot be provided.</td>
+        </tr>
+        <tr>
+          <td><strong>Category 2</strong></td>
+          <td>Performance</td>
+          <td>These cookies collect information about how visitors use a website, for instance which pages visitors go to most often, and if they get error messages from web pages. This information is only used to improve how a website works.</td>
+        </tr>
+        <tr>
+          <td><strong>Category 3</strong></td>
+          <td>Functionality</td>
+          <td>These cookies allow the website to remember choices you make (such as your user name, language or the region you are in) and provide enhanced, more personal features.</td>
+        </tr>
+        <tr>
+          <td><strong>Category 4</strong></td>
+          <td>Targeting and advertising</td>
+          <td>These cookies are used to deliver adverts more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaign.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>8.7. We require your consent to set cookies unless an exception applies:</p>
+    <ul>
+      <li>Category 1 cookies don't require your consent.</li>
+      <li>Category 2 cookies may require your consent unless their sole purpose is to collect information for statistical purposes about how our service or website is used with a view to making improvements (the <strong>statistical purposes exception</strong>). Google Analytics 4 and Microsoft Clarity are used solely for this purpose.</li>
+      <li>Category 3 cookies may require your consent unless their purpose is to adapt the way our service appears or functions in line with your preference or otherwise enhance the appearance or functionality of the website. Tally cookies require consent as they go beyond this.</li>
+      <li>Category 4 cookies do require your specific and informed consent. We do not currently use any Category 4 cookies.</li>
+    </ul>
+
+    <p>8.8. Even if consent is not required to a cookie, we must still tell you about that cookie and, in some cases, you will have the right to opt out.</p>
+
+    <h2>9. Data Retention</h2>
+
+    <p>9.1. We retain personal data only for as long as necessary to fulfil the purpose for which it was collected:</p>
+    <ul>
+      <li><strong>Waitlist data:</strong> held until you request deletion, withdraw consent, or 12 months after the launch notification has been sent with no further engagement from you.</li>
+      <li><strong>Market research responses:</strong> anonymised aggregates are retained for business planning; any personally identifiable responses are deleted within 12 months of collection.</li>
+      <li><strong>Booking data:</strong> retained for the duration required by our accounting, insurance, and legal obligations, then securely deleted.</li>
+      <li><strong>Participant waivers and medical screening data:</strong> retained for a minimum of 6 years, as required by our public liability insurance provider and applicable law. We will confirm the retention period to each participant prior to their first session.</li>
+      <li><strong>Customer Site Liability Agreements:</strong> retained for a minimum of 6 years from the date of the session, in line with the Limitation Act 1980 for contractual claims.</li>
+    </ul>
+
+    <p>9.2. If Hotshots Airsoft does not launch within 24 months of your waitlist sign-up, we will delete all waitlist data and notify you by email before doing so.</p>
+
+    <h2>10. Your Legal Rights</h2>
+
+    <p>10.1. Under certain circumstances, you have rights under data protection laws in relation to your personal information. You have the right to:</p>
+    <ul>
+      <li><strong>Request access</strong> to your personal information (commonly known as a 'data subject access request'). This enables you to receive a copy of the personal information we hold about you and to check that we are lawfully processing it.</li>
+      <li><strong>Request correction</strong> of the personal information that we hold about you. This enables you to have any incomplete or inaccurate information we hold about you corrected.</li>
+      <li><strong>Request erasure</strong> of your personal information. This enables you to ask us to delete or remove personal information where there is no good reason for us continuing to process it. We will action this within 30 days, subject to any legal retention obligations (e.g. liability waivers required by our insurer).</li>
+      <li><strong>Object to processing</strong> of your personal information where we're relying on a legitimate interest and there is something about your particular situation which makes you want to object to processing on this ground.</li>
+      <li><strong>Request restriction of processing</strong> of your personal information in certain situations.</li>
+      <li><strong>Request the transfer</strong> of your personal information to you or to a third party in a structured, commonly used, machine-readable format.</li>
+      <li><strong>Withdraw consent</strong> at any time where we're relying on consent to process your personal information. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</li>
+    </ul>
+
+    <p>10.2. You will not have to pay a fee to access your personal information (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive.</p>
+
+    <p>10.3. To exercise any of the rights above, email <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. We will respond within one calendar month and may ask you to verify your identity first.</p>
+
+    <h2>11. Complaints</h2>
+
+    <p>11.1. If you are unhappy with how we have handled your personal data, we would welcome the opportunity to resolve your concern directly. Please contact our DPO at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a> in the first instance.</p>
+
+    <p>11.2. You also have the right to lodge a complaint with the UK supervisory authority:</p>
+
+    <div class="notice-box">
+      <strong>Information Commissioner's Office (ICO)</strong><br>
+      Website: <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a><br>
+      Helpline: 0303 123 1113<br>
+      Our ICO registration number: ZC149884
+    </div>
+
+    <h2>12. Further Information</h2>
+
+    <p>12.1. If you would like any more information or you have any comments about this Notice, or if you wish to exercise any of your legal rights, please contact our Data Protection Officer at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>.</p>
+
+    <p>12.2. We may have to amend this Notice on occasion, for example if we change the cookies that we use or the data we collect. If we make a material change, we will publish the amended version on the Website and, where possible, notify waitlist members by email before the change takes effect.</p>
+
+    <p>12.3. You can ask us for a copy of this Notice by emailing us at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. This Notice applies to personal information we hold about individuals. It does not apply to information we hold about companies and other organisations.</p>
+
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;" aria-hidden="true">
+        <g>
+          <polygon class="ha-icon-amber" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/>
+          <path style="fill:var(--black)" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/>
+        </g>
+        <g>
+          <path class="ha-icon-olive" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/>
+          <path style="fill:var(--black)" d="M47.61,19.03l42.59,76.84-13.52,8.09v-10.82s0-1.76,0-1.76l-1.51.91-18,10.78-.49.29v12.59l-9.14,5.47.06-102.38M55.88,91.93l1.51-.91,16.67-9.98.83-.5-.47-.85-16.64-30.02-1.87-3.38v3.86s-.03,40-.03,40v1.76M46.61,15.17l-.07,108,11.14-6.67v-12.59l18-10.78v12.59s15.86-9.5,15.86-9.5L46.61,15.17h0ZM56.88,90.17l.02-40,16.64,30.02-16.67,9.98h0Z"/>
+        </g>
+      </svg>
+      <div class="footer-copy">
+        <p>&copy; 2026 Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Company No. 17158689</p>
+        <p style="margin-top:6px">
+          <a href="/">Waitlist</a> &nbsp;&middot;&nbsp; <a href="/legal-notice/">Legal Notice</a> &nbsp;&middot;&nbsp; <a href="/terms/">Terms of Use</a>
+        </p>
+      </div>
+      <div class="footer-spacer"></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('hamburger');
+      var drop = document.getElementById('nav-dropdown');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = btn.classList.toggle('active');
+        drop.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        drop.setAttribute('aria-hidden', !open);
+      });
+      document.addEventListener('click', function (e) {
+        if (!btn.contains(e.target) && !drop.contains(e.target)) {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-hidden', 'true');
+          btn.focus();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
