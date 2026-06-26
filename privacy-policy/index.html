@@ -72,12 +72,6 @@
     table { width: 100%; border-collapse: collapse; margin: 0 0 28px; font-size: 14px; }
     th { background: var(--card); color: var(--ash); font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
     td { padding: 12px 14px; border: 1px solid var(--border); color: #C8C4BC; vertical-align: top; line-height: 1.6; }
-    footer { text-align: center; padding: 40px 24px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; margin-top: 40px; font-weight: 400; }
-    footer a { color: var(--muted); text-decoration: underline; font-weight: 400; }
-    .footer-inner { display: flex; align-items: center; gap: 28px; }
-    .footer-icon { flex-shrink: 0; opacity: 0.5; }
-    .footer-copy { flex: 1; text-align: center; }
-    .footer-spacer { flex-shrink: 0; width: 44px; }
     .social-section { max-width: 560px; margin: 60px auto 0; padding: 0 24px; text-align: center; }
     .social-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ash); margin-bottom: 20px; }
     .social-label::before, .social-label::after { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--border); vertical-align: middle; margin: 0 12px; }
@@ -87,7 +81,14 @@
     .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
     .social-tagline { margin-top: 16px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
     @media (max-width: 520px) { .company-card { grid-template-columns: 1fr; } }
-    </style>
+        footer { text-align: center; padding: 40px 24px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; font-weight: 400; }
+    footer a { color: var(--ash); text-decoration: none; font-weight: 400; }
+    footer a:hover { color: var(--amber); }
+    .footer-inner { display: flex; align-items: center; gap: 28px; padding: 0 8px; }
+    .footer-icon { flex-shrink: 0; opacity: 0.45; width: 42px; }
+    .footer-copy { flex: 1; text-align: center; }
+    .footer-spacer { flex-shrink: 0; width: 42px; }
+  </style>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
   <script>
@@ -488,22 +489,8 @@
 
   <footer>
     <div class="footer-inner">
-      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;" aria-hidden="true">
-        <g>
-          <polygon class="ha-icon-amber" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/>
-          <path style="fill:var(--black)" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/>
-        </g>
-        <g>
-          <path class="ha-icon-olive" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/>
-          <path style="fill:var(--black)" d="M47.61,19.03l42.59,76.84-13.52,8.09v-10.82s0-1.76,0-1.76l-1.51.91-18,10.78-.49.29v12.59l-9.14,5.47.06-102.38M55.88,91.93l1.51-.91,16.67-9.98.83-.5-.47-.85-16.64-30.02-1.87-3.38v3.86s-.03,40-.03,40v1.76M46.61,15.17l-.07,108,11.14-6.67v-12.59l18-10.78v12.59s15.86-9.5,15.86-9.5L46.61,15.17h0ZM56.88,90.17l.02-40,16.64,30.02-16.67,9.98h0Z"/>
-        </g>
-      </svg>
-      <div class="footer-copy">
-        <p>&copy; 2026 Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Company No. 17158689</p>
-        <p style="margin-top:6px">
-          <a href="/">Waitlist</a> &nbsp;&middot;&nbsp; <a href="/legal-notice/">Legal Notice</a> &nbsp;&middot;&nbsp; <a href="/terms/">Terms of Use</a>
-        </p>
-      </div>
+      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;" aria-hidden="true"><g><polygon fill="#c8860a" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/><path fill="#0D0F0A" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/></g><g><path fill="#3d4a2e" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/></g></svg>
+      <div class="footer-copy"><a href="/">Waitlist</a> &nbsp;&middot;&nbsp; <a href="/legal-notice/">Legal Notice</a> &nbsp;&middot;&nbsp; <a href="/terms/">Terms of Use</a></div>
       <div class="footer-spacer"></div>
     </div>
   </footer>
