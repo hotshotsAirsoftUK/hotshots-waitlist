@@ -81,15 +81,26 @@
     .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
     .social-tagline { margin-top: 16px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
     @media (max-width: 520px) { .company-card { grid-template-columns: 1fr; } }
-        footer { text-align: center; padding: 40px 24px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; letter-spacing: 0.5px; color: var(--ash); border-top: 1px solid var(--border); line-height: 1.8; font-weight: 400; }
-    footer a { color: var(--ash); text-decoration: none; font-weight: 400; }
+    /* ── FOOTER ── */
+    footer { padding: 52px 40px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; color: var(--ash); border-top: 1px solid var(--border); font-weight: 400; }
+    footer a { color: var(--ash); text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: var(--amber); }
-    .footer-inner { display: flex; align-items: center; gap: 24px; padding: 0 8px; }
-    .footer-icon { flex-shrink: 0; opacity: 0.65; width: 42px; }
-    .footer-copy { flex: 1; text-align: center; }
-    .footer-company { font-size: 11px; color: var(--ash); margin: 0 0 6px; letter-spacing: 0.3px; }
-    .footer-spacer { flex-shrink: 0; width: 42px; }
-    @media (max-width: 540px) { .footer-icon, .footer-spacer { display: none; } .footer-inner { justify-content: center; } }
+    .footer-inner { display: flex; align-items: center; gap: 36px; max-width: 1000px; margin: 0 auto; }
+    .footer-icon { flex-shrink: 0; opacity: 0.6; height: 64px; width: auto; }
+    .footer-copy { flex: 1; text-align: left; }
+    .footer-company { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; font-weight: 600; color: var(--smoke); letter-spacing: 0.5px; margin: 0 0 3px; }
+    .footer-meta { font-size: 11px; color: var(--ash); margin: 0 0 10px; letter-spacing: 0.3px; }
+    .footer-nav { font-size: 11px; letter-spacing: 0.5px; margin: 0; }
+    .footer-nav a { color: var(--ash); margin-right: 16px; }
+    .footer-nav a:last-child { margin-right: 0; }
+    .footer-nav a:hover { color: var(--amber); }
+    .footer-spacer { flex-shrink: 0; width: 64px; }
+    @media (max-width: 600px) {
+      footer { padding: 40px 24px; }
+      .footer-icon, .footer-spacer { display: none; }
+      .footer-copy { text-align: center; }
+      .footer-nav a { margin: 0 8px; }
+    }
   </style>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
@@ -389,8 +400,12 @@
 
   <footer>
     <div class="footer-inner">
-      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;" aria-hidden="true"><g><polygon fill="#c8860a" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/><path fill="#0D0F0A" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/></g><g><path fill="#3d4a2e" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/></g></svg>
-      <div class="footer-copy"><p class="footer-company">&copy; 2026 Hotshots Airsoft Ltd &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Company No. 17158689</p><a href="/">Waitlist</a> &nbsp;&middot;&nbsp; <a href="/privacy-policy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/legal-notice/">Legal Notice</a></div>
+      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" aria-hidden="true"><g><polygon fill="#c8860a" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/><path fill="#0D0F0A" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/></g><g><path fill="#3d4a2e" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/></g></svg>
+      <div class="footer-copy">
+        <p class="footer-company">Hotshots Airsoft Ltd</p>
+        <p class="footer-meta">&copy; 2026 &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Co. No. 17158689</p>
+        <p class="footer-nav"><a href="/">Waitlist</a><a href="/privacy-policy/">Privacy Policy</a><a href="/legal-notice/">Legal Notice</a></p>
+      </div>
       <div class="footer-spacer"></div>
     </div>
   </footer>
