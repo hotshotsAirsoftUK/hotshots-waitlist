@@ -64,86 +64,35 @@
     .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
     .skip-link:focus { left: 8px; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    /* Contrast fix: links on card backgrounds */
     .company-card a, .notice-box a { color: var(--ash); }
 
+    /* ── LOGO & HEADER COMPONENTS ── */
+    .ha-wm-ff { font-family: 'Headline Gothic ATF','HeadlineGothicATF','Bebas Neue',serif; }
+    .ha-wm-sp { font-size: 12.14px; letter-spacing: 0em; }
+    .ha-wm-amber { fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
+    .ha-wm-olive { fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
+    .ha-wm-bg { fill: #000000; }
+    .ha-icon-amber { fill: #c8860a; }
+    .ha-icon-olive { fill: #3d4a2e; }
+    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 8px 10px; border: 2px solid #000000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
+    .logo-home-btn:hover { opacity: 0.75; }
+    .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
+
     /* ── HAMBURGER MENU ── */
-    .hamburger {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
-    .hamburger span {
-      display: block;
-      height: 2px;
-      background: #000000;
-      border-radius: 1px;
-      transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1), background 0.2s;
-    }
+    .hamburger { background: none; border: none; cursor: pointer; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .hamburger span { display: block; height: 2px; background: #000000; border-radius: 1px; transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1), background 0.2s; }
     .hamburger span:nth-child(1) { width: 24px; }
     .hamburger span:nth-child(2) { width: 24px; }
     .hamburger span:nth-child(3) { width: 24px; }
     .hamburger.active span:nth-child(1) { width: 24px; background: #000000; }
     .hamburger.active span:nth-child(2) { width: 14px; background: #000000; }
     .hamburger.active span:nth-child(3) { width: 4px;  background: #000000; }
-    .nav-dropdown {
-      position: absolute;
-      top: calc(100% + 10px);
-      right: 0;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-top: 2px solid var(--amber);
-      min-width: 160px;
-      border-radius: 2px;
-      opacity: 0;
-      transform: translateY(-6px);
-      pointer-events: none;
-      transition: opacity 0.22s ease, transform 0.22s ease;
-      z-index: 200;
-    }
-    .nav-dropdown.open {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: all;
-    }
-    .nav-dropdown a {
-      display: block;
-      padding: 13px 20px;
-      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--ash);
-      text-decoration: none;
-      border-bottom: 1px solid var(--border);
-      transition: color 0.2s, background 0.2s;
-    }
+    .nav-dropdown { position: absolute; top: calc(100% + 10px); right: 0; background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--amber); min-width: 160px; border-radius: 2px; opacity: 0; transform: translateY(-6px); pointer-events: none; transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200; }
+    .nav-dropdown.open { opacity: 1; transform: translateY(0); pointer-events: all; }
+    .nav-dropdown a { display: block; padding: 13px 20px; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
     .nav-dropdown a:last-child { border-bottom: none; }
-    .nav-dropdown a:hover { color: var(--amber); background: rgba(200, 134, 10, 0.05); }
-    
-    /* ── ACTIVE NAV LINK ── */
-    .nav-dropdown a[aria-current="page"] {
-      color: var(--amber);
-      background: rgba(200, 134, 10, 0.05);
-    }
-  
-    /* ── LOGO HOME BUTTON ── */
-    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 6px 10px; border: 2px solid #000000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
-    .logo-home-btn:hover { opacity: 0.75; }
-    .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
-    .ha-icon-amber { fill: #c8860a; }
-    .ha-icon-olive { fill: #3d4a2e; }
-    .ha-wm-ff   { font-family: 'Headline Gothic ATF', 'HeadlineGothicATF', 'Bebas Neue', serif; }
-    .ha-wm-sp   { font-size: 12.14px; letter-spacing: 0em; }
-    .ha-wm-amber{ fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
-    .ha-wm-olive{ fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
-    .ha-wm-bg   { fill: #000000; }
+    .nav-dropdown a:hover, .nav-dropdown a[aria-current="page"] { color: var(--amber); background: rgba(200, 134, 10, 0.05); }
+
     /* ── FOOTER ── */
     footer { padding: 52px 40px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; color: var(--ash); border-top: 1px solid var(--border); font-weight: 400; }
     footer a { color: var(--ash); text-decoration: none; transition: color 0.2s; }
@@ -188,7 +137,6 @@
 
   <header>
     <a href="/" class="logo-home-btn" aria-label="Hotshots Airsoft — Home">
-      <!-- ── LOGO WORDMARK ── -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.77 52.02" style="height:44px;width:auto;" aria-hidden="true">
         <path class="ha-wm-bg" d="M78.49,7.08c-.68-.75-1.93-1.65-4.04-1.65-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.02.27c-.59-.22-1.28-.36-2.12-.36-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.16,2.12-.13,1.74-1.18,13.57-.17,1.71-.3,3,3.01-.26,3.27-.29,2.12-.19h0s2.96-.26,2.96-.26l2.12-.19.04-.53c.68.31,1.56.54,2.69.54.27,0,.54-.01.82-.04,1.11-.1,2.09-.39,2.95-.82l-3.24,10.97-1.04,3.52,3.65-.32,2.06-.18.59-.05,1.77-.15,2.18-.19.71-.06h0s1.89-.17,1.89-.17h0s.36-.03.36-.03l1.76-.15h0s1.17-.1,1.17-.1l1-.09.44-.04,2.14-.19,1.61-.14c.3.06.63.1.98.1.17,0,.35,0,.54-.02,1.2-.11,2.24-.53,3.09-1.2.6.37,1.43.66,2.58.66.2,0,.41,0,.62-.03.6-.05,1.11-.17,1.57-.33l2.26-.2,2.18-.19,2.12-.19h0s1.85-.16,1.85-.16l2.18-.19,2.12-.18.16-2.12.08-1.16.54-6.18,1.5-.13.18-2.09.17-1.93.04-.45,2.93-.26,2.12-.19.11-1.52c.76.72,2,1.45,3.92,1.45.23,0,.46-.01.7-.03,3.9-.34,6.55-3.26,6.93-7.62.21-2.46-.4-4.1-1.29-5.26l1.63-.14.22-2.05c.28-2.71-.17-4.68-1.38-6.03Z"/>
         <text class="ha-wm-ff" transform="translate(2.9 30.79) rotate(-5) scale(.99) skewX(-9.89)">
@@ -207,7 +155,7 @@
       </button>
       <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
         <a href="/about/" role="menuitem">About Us</a>
-        <a href="mailto:info@hotshotsairsoft.co.uk" role="menuitem">Contact Us</a>
+        <a href="/#contact" role="menuitem">Contact Us</a>
         <a href="/#waitlist" role="menuitem">Join Waitlist</a>
       </div>
     </nav>
@@ -269,13 +217,10 @@
     <p>Hotshots Airsoft Ltd reserves the right to modify this legal notice at any time. Changes will be published on this page and take effect immediately upon posting. The "last updated" date at the top of this page will reflect the most recent revision. Your continued use of this website following any changes signifies your acceptance of the revised terms.</p>
 
   </div>
-  
-
-    
 
 </main>
 
-    <footer>
+  <footer>
     <div class="footer-inner">
       <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" aria-hidden="true"><g><polygon fill="#c8860a" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/><path fill="#0D0F0A" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/></g><g><path fill="#3d4a2e" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/></g></svg>
       <div class="footer-copy">
