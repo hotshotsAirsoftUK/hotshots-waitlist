@@ -28,7 +28,7 @@
     }
     body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; font-size: 16px; line-height: 1.7; min-height: 100vh; }
     header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.2); padding: 18px 24px; display: flex; align-items: center; gap: 12px; background: rgba(200,134,10,0.97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 6px 10px; border: 2px solid #000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
+    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 8px 10px; border: 2px solid #000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
     .logo-home-btn:hover { opacity: 0.75; }
     .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
     .ha-wm-ff   { font-family: 'Headline Gothic ATF','HeadlineGothicATF','Bebas Neue',serif; }
@@ -50,7 +50,7 @@
     .nav-dropdown.open { opacity: 1; transform: translateY(0); pointer-events: all; }
     .nav-dropdown a { display: block; padding: 13px 20px; font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
     .nav-dropdown a:last-child { border-bottom: none; }
-    .nav-dropdown a:hover { color: var(--amber); background: rgba(200,134,10,0.05); }
+    .nav-dropdown a:hover, .nav-dropdown a[aria-current="page"] { color: var(--amber); background: rgba(200,134,10,0.05); }
     .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow',Arial,sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
     .skip-link:focus { left: 8px; }
     .content { max-width: 700px; margin: 0 auto; padding: 52px 24px 80px; }
@@ -72,14 +72,6 @@
     table { width: 100%; border-collapse: collapse; margin: 0 0 28px; font-size: 14px; }
     th { background: var(--card); color: var(--ash); font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
     td { padding: 12px 14px; border: 1px solid var(--border); color: #C8C4BC; vertical-align: top; line-height: 1.6; }
-    .social-section { max-width: 560px; margin: 60px auto 0; padding: 0 24px; text-align: center; }
-    .social-label { font-family: 'Barlow Semi Condensed',Arial,sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ash); margin-bottom: 20px; }
-    .social-label::before, .social-label::after { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--border); vertical-align: middle; margin: 0 12px; }
-    .social-icons { display: flex; justify-content: center; gap: 16px; }
-    .social-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; color: var(--ash); text-decoration: none; transition: color 0.2s, border-color 0.2s, background 0.2s; }
-    .social-icon:hover { color: var(--amber); border-color: var(--amber); background: rgba(200,134,10,0.06); }
-    .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
-    .social-tagline { margin-top: 16px; font-family: 'Barlow',Arial,sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
     @media (max-width: 520px) { .company-card { grid-template-columns: 1fr; } }
     /* ── FOOTER ── */
     footer { padding: 52px 40px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; color: var(--ash); border-top: 1px solid var(--border); font-weight: 400; }
@@ -141,7 +133,7 @@
       </button>
       <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
         <a href="/about/" role="menuitem">About Us</a>
-        <a href="mailto:info@hotshotsairsoft.co.uk" role="menuitem">Contact Us</a>
+        <a href="/#contact" role="menuitem">Contact Us</a>
         <a href="/#waitlist" role="menuitem">Join Waitlist</a>
       </div>
     </nav>
@@ -324,25 +316,19 @@
     <h2>6. Protecting Information</h2>
 
     <p>6.1. We have strict security measures to protect personal information.</p>
-
     <p>6.2. We work to protect the security of your information during transmission by using Secure Sockets Layer (SSL) software to encrypt information you input.</p>
-
     <p>6.3. We maintain physical, electronic and procedural safeguards in connection with the collection, storage and disclosure of personally identifiable customer information. Our security procedures mean that we may occasionally request proof of identity before we disclose personal information to you. Physical records (including signed participant waivers) are stored in a locked file accessible only by authorised personnel.</p>
-
     <p>6.4. It is important for you to protect against unauthorised access to your password and to your computer. Be sure to sign off when you finish using a shared computer.</p>
 
     <h2>7. The Internet</h2>
 
     <p>7.1. If you communicate with us using the internet, we may occasionally email you about our services and products. When you first give us personal information through the Website, we will normally give you the opportunity to say whether you would prefer us not to contact you by email. You can also unsubscribe at any time by following the instructions within the email.</p>
-
     <p>7.2. Please remember that communications over the internet, such as emails and webmails (messages sent through a website), are not secure unless they have been encrypted. Your communications may go through a number of countries before they are delivered — this is the nature of the internet. We cannot accept responsibility for any unauthorised access or loss of personal information that is beyond our control.</p>
 
     <h2>8. Cookies and Other Internet Tracking Technology</h2>
 
     <p>8.1. When we provide services, we want to make them easy, useful and reliable. This sometimes involves placing small amounts of information on your computer, which is sent back to us at a later time. These are called 'cookies'. These cookies are listed in the table at clause 8.5.</p>
-
     <p>8.2. Where applicable, this section of the Notice also relates to that technology but the term 'cookie' is used throughout.</p>
-
     <p>8.3. Some of these cookies are essential to services you've requested from us, whereas others are used to improve services for you, for example through:</p>
     <ul>
       <li>letting you navigate between pages efficiently;</li>
@@ -350,7 +336,6 @@
       <li>recognising that you have already given a username and password so you don't need to enter it for every web page requested; and</li>
       <li>measuring how many people are using services, so they can be made easier to use and that there is enough capacity to ensure they are fast.</li>
     </ul>
-
     <p>8.4. To learn more about cookies, you may wish to visit: <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">www.allaboutcookies.org</a>, <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener">www.youronlinechoices.eu</a> or <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Google's cookie policy</a>.</p>
 
     <p>8.5. This Website uses, or allows use of, the following cookies:</p>
@@ -366,32 +351,17 @@
       <tbody>
         <tr>
           <td><strong>Google Analytics 4</strong></td>
-          <td>
-            Tracks page views, session data, device type, approximate location, and user behaviour to measure site performance.<br><br>
-            <strong>Category 2</strong> — performance (statistical purposes exception applies)<br>
-            <strong>Third party</strong>: another website is placing the cookie<br>
-            <strong>Persistent</strong>: _ga lasts 2 years; _ga_* lasts 2 years
-          </td>
+          <td>Tracks page views, session data, device type, approximate location, and user behaviour to measure site performance.<br><br><strong>Category 2</strong> — performance (statistical purposes exception applies)<br><strong>Third party</strong>: another website is placing the cookie<br><strong>Persistent</strong>: _ga lasts 2 years; _ga_* lasts 2 years</td>
           <td>No</td>
         </tr>
         <tr>
           <td><strong>Microsoft Clarity</strong></td>
-          <td>
-            Records session behaviour including heatmaps and scroll patterns.<br><br>
-            <strong>Category 2</strong> — performance (statistical purposes exception applies)<br>
-            <strong>Third party</strong>: another website is placing the cookie<br>
-            <strong>Persistent/session</strong>: _clck lasts 1 year; _clsk is session
-          </td>
+          <td>Records session behaviour including heatmaps and scroll patterns.<br><br><strong>Category 2</strong> — performance (statistical purposes exception applies)<br><strong>Third party</strong>: another website is placing the cookie<br><strong>Persistent/session</strong>: _clck lasts 1 year; _clsk is session</td>
           <td>No</td>
         </tr>
         <tr>
           <td><strong>Tally</strong></td>
-          <td>
-            Strictly necessary to process form submissions. Not used for tracking or advertising.<br><br>
-            <strong>Category 3</strong> — functionality<br>
-            <strong>Third party</strong>: another website is placing the cookie<br>
-            <strong>Session cookie</strong>
-          </td>
+          <td>Strictly necessary to process form submissions. Not used for tracking or advertising.<br><br><strong>Category 3</strong> — functionality<br><strong>Third party</strong>: another website is placing the cookie<br><strong>Session cookie</strong></td>
           <td>Yes</td>
         </tr>
       </tbody>
@@ -406,33 +376,13 @@
 
     <table>
       <thead>
-        <tr>
-          <th>Category</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
+        <tr><th>Category</th><th>Type</th><th>Description</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td><strong>Category 1</strong></td>
-          <td>Strictly necessary</td>
-          <td>These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. Without these cookies services you have asked for cannot be provided.</td>
-        </tr>
-        <tr>
-          <td><strong>Category 2</strong></td>
-          <td>Performance</td>
-          <td>These cookies collect information about how visitors use a website, for instance which pages visitors go to most often, and if they get error messages from web pages. This information is only used to improve how a website works.</td>
-        </tr>
-        <tr>
-          <td><strong>Category 3</strong></td>
-          <td>Functionality</td>
-          <td>These cookies allow the website to remember choices you make (such as your user name, language or the region you are in) and provide enhanced, more personal features.</td>
-        </tr>
-        <tr>
-          <td><strong>Category 4</strong></td>
-          <td>Targeting and advertising</td>
-          <td>These cookies are used to deliver adverts more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaign.</td>
-        </tr>
+        <tr><td><strong>Category 1</strong></td><td>Strictly necessary</td><td>These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. Without these cookies services you have asked for cannot be provided.</td></tr>
+        <tr><td><strong>Category 2</strong></td><td>Performance</td><td>These cookies collect information about how visitors use a website, for instance which pages visitors go to most often, and if they get error messages from web pages. This information is only used to improve how a website works.</td></tr>
+        <tr><td><strong>Category 3</strong></td><td>Functionality</td><td>These cookies allow the website to remember choices you make (such as your user name, language or the region you are in) and provide enhanced, more personal features.</td></tr>
+        <tr><td><strong>Category 4</strong></td><td>Targeting and advertising</td><td>These cookies are used to deliver adverts more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaign.</td></tr>
       </tbody>
     </table>
 
@@ -443,7 +393,6 @@
       <li>Category 3 cookies may require your consent unless their purpose is to adapt the way our service appears or functions in line with your preference or otherwise enhance the appearance or functionality of the website. Tally cookies require consent as they go beyond this.</li>
       <li>Category 4 cookies do require your specific and informed consent. We do not currently use any Category 4 cookies.</li>
     </ul>
-
     <p>8.8. Even if consent is not required to a cookie, we must still tell you about that cookie and, in some cases, you will have the right to opt out.</p>
 
     <h2>9. Data Retention</h2>
@@ -456,7 +405,6 @@
       <li><strong>Participant waivers and medical screening data:</strong> retained for a minimum of 6 years, as required by our public liability insurance provider and applicable law. We will confirm the retention period to each participant prior to their first session.</li>
       <li><strong>Customer Site Liability Agreements:</strong> retained for a minimum of 6 years from the date of the session, in line with the Limitation Act 1980 for contractual claims.</li>
     </ul>
-
     <p>9.2. If Hotshots Airsoft does not launch within 24 months of your waitlist sign-up, we will delete all waitlist data and notify you by email before doing so.</p>
 
     <h2>10. Your Legal Rights</h2>
@@ -471,17 +419,13 @@
       <li><strong>Request the transfer</strong> of your personal information to you or to a third party in a structured, commonly used, machine-readable format.</li>
       <li><strong>Withdraw consent</strong> at any time where we're relying on consent to process your personal information. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</li>
     </ul>
-
     <p>10.2. You will not have to pay a fee to access your personal information (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive.</p>
-
     <p>10.3. To exercise any of the rights above, email <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. We will respond within one calendar month and may ask you to verify your identity first.</p>
 
     <h2>11. Complaints</h2>
 
     <p>11.1. If you are unhappy with how we have handled your personal data, we would welcome the opportunity to resolve your concern directly. Please contact our DPO at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a> in the first instance.</p>
-
     <p>11.2. You also have the right to lodge a complaint with the UK supervisory authority:</p>
-
     <div class="notice-box">
       <strong>Information Commissioner's Office (ICO)</strong><br>
       Website: <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a><br>
@@ -492,9 +436,7 @@
     <h2>12. Further Information</h2>
 
     <p>12.1. If you would like any more information or you have any comments about this Notice, or if you wish to exercise any of your legal rights, please contact our Data Protection Officer at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>.</p>
-
     <p>12.2. We may have to amend this Notice on occasion, for example if we change the cookies that we use or the data we collect. If we make a material change, we will publish the amended version on the Website and, where possible, notify waitlist members by email before the change takes effect.</p>
-
     <p>12.3. You can ask us for a copy of this Notice by emailing us at <a href="mailto:info@hotshotsairsoft.co.uk">info@hotshotsairsoft.co.uk</a>. This Notice applies to personal information we hold about individuals. It does not apply to information we hold about companies and other organisations.</p>
 
   </div>
