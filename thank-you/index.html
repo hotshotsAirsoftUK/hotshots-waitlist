@@ -2,54 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.55 123.17'%3E%3Cpolygon fill='%23c8860a' points='34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48'/%3E%3Cpath fill='%233d4a2e' d='M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z'/%3E%3C%2Fsvg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.55 123.17'%3E%3Cpolygon fill='%23c8860a' points='34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48'/%3E%3Cpath fill='%233d4a2e' d='M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z'/%3E%3C/svg%3E">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hotshotsairsoft.co.uk/thank-you/" />
+  <meta property="og:title" content="You're In — Hotshots Airsoft" />
+  <meta property="og:description" content="You're on the waitlist. We'll email you when bookings open." />
+  <meta property="og:image" content="https://www.hotshotsairsoft.co.uk/og-image.png" />
   <title>You're In — Hotshots Airsoft</title>
+  <link rel="canonical" href="https://www.hotshotsairsoft.co.uk/thank-you/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    html { scroll-behavior: smooth; }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --olive: #3D4A2E; --earth: #8B7355; --amber: #C8860A;
-      --smoke: #F5F3EE; --ash: #9A9A8A; --black: #0D0F0A;
-      --card: #1B1F17; --border: #2D3325; --muted: #9A9A8A;
-    }
-    body { background: var(--black); color: var(--smoke); font-family: 'Barlow', Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px 110px; padding-bottom: 110px; text-align: center; }
-    .badge { display: inline-block; background: var(--olive); color: var(--smoke); font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 2px; margin-bottom: 28px; }
-    h1 { font-family: 'Bebas Neue', Arial, sans-serif; font-size: clamp(52px, 10vw, 96px); letter-spacing: 4px; line-height: 1.0; margin-bottom: 20px; }
-    h1 span { color: var(--amber); }
-    p { font-size: 16px; color: #C8C4BC; max-width: 400px; line-height: 1.7; margin-bottom: 14px; }
-    .divider { border: none; border-top: 1px solid var(--border); width: 60px; margin: 28px auto; }
-    .back-link { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ash); text-decoration: none; transition: color 0.2s; }
-    .back-link:hover { color: var(--amber); }
-    /* ── FOOTER ── */
-    footer { position: fixed; bottom: 0; left: 0; right: 0; padding: 14px 40px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; color: var(--ash); border-top: 1px solid var(--border); background: var(--black); font-weight: 400; }
-    footer a { color: var(--ash); text-decoration: none; transition: color 0.2s; }
-    footer a:hover { color: var(--amber); }
-    .footer-inner { display: flex; align-items: center; gap: 36px; max-width: 1000px; margin: 0 auto; }
-    .footer-icon { flex-shrink: 0; opacity: 0.6; height: 40px; width: auto; }
-    .footer-copy { flex: 1; text-align: left; }
-    .footer-company { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; font-weight: 600; color: var(--smoke); letter-spacing: 0.5px; margin: 0 0 1px; }
-    .footer-meta { font-size: 10px; color: var(--ash); margin: 0; letter-spacing: 0.3px; }
-    .footer-nav { display: none; }
-    .footer-spacer { flex-shrink: 0; width: 40px; }
-    @media (max-width: 600px) {
-      footer { padding: 12px 20px; }
-      .footer-icon, .footer-spacer { display: none; }
-      .footer-copy { text-align: center; }
-    }
-  </style>
-  <!-- Google Analytics 4 -->
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGF1630YKT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-RGF1630YKT');
+    // Fire a conversion event for waitlist signup
+    gtag('event', 'waitlist_signup', { event_category: 'engagement' });
   </script>
+
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -58,33 +35,477 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "x16wb0jmp2");
   </script>
-  <script>
-    window.addEventListener('load', function() {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'waitlist_signup', { event_category: 'engagement' });
-      }
-    });
-  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --olive:        #3D4A2E;
+      --olive-dim:    #2C361F;
+      --earth:        #8B7355;
+      --midnight:     #1A1A1A;
+      --amber:        #C8860A;
+      --brass:        #E8A820;
+      --smoke:        #F5F3EE;
+      --ash:          #9A9A8A;
+      --black:        #0D0F0A;
+      --dark:         #131510;
+      --card:         #1B1F17;
+      --card2:        #20241B;
+      --border:       #2D3325;
+      --white:        #F5F3EE;
+      --muted:        #9A9A8A;
+      --radius:       2px;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(200, 134, 10, 0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .logo-home-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 10px;
+      border: 2px solid #000000;
+      border-radius: 2px;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: opacity 0.2s;
+    }
+    .logo-home-btn:hover { opacity: 0.75; }
+
+    .ha-wm-ff   { font-family: 'Headline Gothic ATF', 'HeadlineGothicATF', 'Bebas Neue', serif; }
+    .ha-wm-sp   { font-size: 12.14px; letter-spacing: 0em; }
+    .ha-wm-amber{ fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
+    .ha-wm-olive{ fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
+    .ha-wm-bg   { fill: #000000; }
+
+    .header-divider {
+      width: 1px;
+      height: 44px;
+      background: rgba(0,0,0,0.25);
+      flex-shrink: 0;
+      margin-left: 4px;
+    }
+
+    /* ── NAV ── */
+    .hamburger {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: #000000;
+      border-radius: 1px;
+      transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1), background 0.2s;
+    }
+    .hamburger span:nth-child(1) { width: 24px; }
+    .hamburger span:nth-child(2) { width: 24px; }
+    .hamburger span:nth-child(3) { width: 24px; }
+    .hamburger.active span:nth-child(1) { width: 24px; background: #000000; }
+    .hamburger.active span:nth-child(2) { width: 14px; background: #000000; }
+    .hamburger.active span:nth-child(3) { width: 4px;  background: #000000; }
+
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--amber);
+      min-width: 160px;
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(-6px);
+      pointer-events: none;
+      transition: opacity 0.22s ease, transform 0.22s ease;
+      z-index: 200;
+    }
+    .nav-dropdown.open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+    .nav-dropdown a {
+      display: block;
+      padding: 13px 20px;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ash);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover {
+      color: var(--amber);
+      background: rgba(200, 134, 10, 0.05);
+    }
+    .nav-dropdown a[aria-current="page"] {
+      color: var(--amber);
+    }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 24px 64px;
+      position: relative;
+    }
+
+    main::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        30deg,
+        rgba(61,74,46,0.06) 0px,
+        rgba(61,74,46,0.06) 1px,
+        transparent 1px,
+        transparent 28px
+      );
+      pointer-events: none;
+    }
+
+    .confirmation-wrap {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(200,134,10,0.1);
+      border: 1px solid var(--amber);
+      color: var(--amber);
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: clamp(52px, 10vw, 88px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 span { color: var(--amber); }
+
+    .confirmation-wrap p {
+      color: var(--ash);
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 440px;
+      margin: 0 auto 36px;
+    }
+
+    .confirmation-wrap p strong {
+      color: var(--smoke);
+      font-weight: 600;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--amber);
+      margin: 0 auto 36px;
+      border: none;
+    }
+
+    .back-link {
+      display: inline-block;
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ash);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 12px 28px;
+      border-radius: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .back-link:hover {
+      color: var(--amber);
+      border-color: var(--amber);
+    }
+
+    /* ── SOCIAL ── */
+    .social-section {
+      max-width: 560px;
+      margin: 64px auto 0;
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .social-label {
+      font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ash);
+      transition: color 0.2s;
+    }
+
+    .social-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .social-icon:hover { color: var(--amber); }
+
+    .social-tagline {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      margin-top: 64px;
+    }
+
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .ha-icon-amber { fill: #c8860a; }
+    .ha-icon-olive { fill: #3d4a2e; }
+
+    .footer-copy {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .footer-copy a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-copy a:hover { color: var(--amber); }
+
+    .footer-spacer {
+      width: 56px;
+      flex-shrink: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 480px) {
+      .footer-inner { flex-direction: column; gap: 16px; }
+      .footer-spacer { display: none; }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="badge">Waitlist Confirmed</div>
-  <h1>You're <span>In.</span></h1>
-  <p>We'll send you <strong>one email</strong> when bookings open &mdash; nothing else.</p>
-  <p>In the meantime, follow us on social for exclusive previews and behind-the-scenes content.</p>
-  <hr class="divider" />
-  <a href="/" class="back-link">&larr; Back to Home</a>
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo-home-btn" aria-label="Hotshots Airsoft — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.77 52.02" style="height:44px;width:auto;" aria-hidden="true">
+        <path class="ha-wm-bg" d="M78.49,7.08c-.68-.75-1.93-1.65-4.04-1.65-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.02.27c-.59-.22-1.28-.36-2.12-.36-.23,0-.47.01-.72.03-.76.07-1.48.24-2.14.5l-2.77.24-7.78.68-2.09.18-.03.31c-.61-.22-1.35-.36-2.25-.36-.26,0-.53.01-.81.04-.99.09-1.91.33-2.73.7l.02-.18-3.01.26-2.07.18h0s-3.01.26-3.01.26l-3.27.29-2.12.19-.16,2.12-.13,1.74-1.18,13.57-.17,1.71-.3,3,3.01-.26,3.27-.29,2.12-.19h0s2.96-.26,2.96-.26l2.12-.19.04-.53c.68.31,1.56.54,2.69.54.27,0,.54-.01.82-.04,1.11-.1,2.09-.39,2.95-.82l-3.24,10.97-1.04,3.52,3.65-.32,2.06-.18.59-.05,1.77-.15,2.18-.19.71-.06h0s1.89-.17,1.89-.17h0s.36-.03.36-.03l1.76-.15h0s1.17-.1,1.17-.1l1-.09.44-.04,2.14-.19,1.61-.14c.3.06.63.1.98.1.17,0,.35,0,.54-.02,1.2-.11,2.24-.53,3.09-1.2.6.37,1.43.66,2.58.66.2,0,.41,0,.62-.03.6-.05,1.11-.17,1.57-.33l2.26-.2,2.18-.19,2.12-.19h0s1.85-.16,1.85-.16l2.18-.19,2.12-.18.16-2.12.08-1.16.54-6.18,1.5-.13.18-2.09.17-1.93.04-.45,2.93-.26,2.12-.19.11-1.52c.76.72,2,1.45,3.92,1.45.23,0,.46-.01.7-.03,3.9-.34,6.55-3.26,6.93-7.62.21-2.46-.4-4.1-1.29-5.26l1.63-.14.22-2.05c.28-2.71-.17-4.68-1.38-6.03Z"/>
+        <text class="ha-wm-ff" transform="translate(2.9 30.79) rotate(-5) scale(.99) skewX(-9.89)">
+          <tspan class="ha-wm-amber" x="0" y="0">HOTSHOTS</tspan>
+          <tspan class="ha-wm-sp" x="74.68" y="0"> </tspan>
+          <tspan class="ha-wm-olive"><tspan x="18.63" y="14">AIRSOFT</tspan></tspan>
+        </text>
+      </svg>
+    </a>
+    <div class="header-divider"></div>
+    <nav style="margin-left: auto; position: relative;">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-dropdown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown" role="menu" aria-hidden="true">
+        <a href="about.html" role="menuitem">About Us</a>
+        <a href="index.html#contact" role="menuitem">Contact Us</a>
+        <a href="index.html#waitlist" role="menuitem">Join Waitlist</a>
+      </div>
+    </nav>
+  </header>
 
+  <!-- MAIN -->
+  <main>
+    <div class="confirmation-wrap">
+      <div class="badge">Waitlist Confirmed</div>
+      <h1>You're <span>In.</span></h1>
+      <p>We'll send you <strong>one email</strong> when bookings open — nothing else. No newsletters, no spam. Just the signal that it's time.</p>
+      <hr class="divider" />
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <!-- SOCIAL -->
+    <section class="social-section" aria-label="Follow us on social media">
+      <div class="social-label">Follow Us In the Meantime</div>
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.instagram.com/hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on Instagram (opens in new tab)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.tiktok.com/@hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on TikTok (opens in new tab)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.25 8.25 0 004.83 1.55V6.79a4.85 4.85 0 01-1.06-.1z"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.youtube.com/@hotshots.airsoftuk" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on YouTube (opens in new tab)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+        <a class="social-icon" href="https://x.com/hotshotsairsoft" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on X (opens in new tab)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.twitch.tv/hotshotsairsoft" target="_blank" rel="noopener" aria-label="Hotshots Airsoft on Twitch (opens in new tab)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+        </a>
+      </div>
+      <p class="social-tagline">Behind-the-scenes content, event highlights and early offers</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" aria-hidden="true"><g><polygon fill="#c8860a" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/><path fill="#0D0F0A" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/></g><g><path fill="#3d4a2e" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.55 123.17" style="height:56px;width:auto;flex-shrink:0;" aria-hidden="true">
+        <g>
+          <polygon class="ha-icon-amber" points="34.75 115.48 34.75 108.13 15.75 96.76 15.75 104.1 2.29 96.05 15.75 71.78 15.75 80.33 34.75 91.7 34.75 37.5 46.06 17.1 46.12 122.29 34.75 115.48"/>
+          <path style="fill:var(--black)" d="M45.56,19.03l.06,102.38-10.37-6.21v-7.35l-.49-.29-18-10.78-1.51-.91v7.35l-12.28-7.35,12.28-22.16v6.9l.49.29,18,10.78,1.51.91v-54.95s10.31-18.6,10.31-18.6M46.56,15.17l-12.31,22.2v53.45s-18-10.78-18-10.78v-10.2L1.62,96.23l14.62,8.76v-7.35l18,10.78v7.35l12.38,7.41-.07-108h0Z"/>
+        </g>
+        <g>
+          <path class="ha-icon-olive" d="M47.11,17.1l43.76,78.95-14.69,8.79v-12.59l-19,11.38v12.59l-10.14,6.07.07-105.19ZM56.38,91.05l17.84-10.68-17.81-32.13-.03,42.81Z"/>
+          <path style="fill:var(--black)" d="M47.61,19.03l42.59,76.84-13.52,8.09v-10.82s0-1.76,0-1.76l-1.51.91-18,10.78-.49.29v12.59l-9.14,5.47.06-102.38M55.88,91.93l1.51-.91,16.67-9.98.83-.5-.47-.85-16.64-30.02-1.87-3.38v3.86s-.03,40-.03,40v1.76M46.61,15.17l-.07,108,11.14-6.67v-12.59l18-10.78v12.59s15.86-9.5,15.86-9.5L46.61,15.17h0ZM56.88,90.17l.02-40,16.64,30.02-16.67,9.98h0Z"/>
+        </g>
+      </svg>
       <div class="footer-copy">
-        <p class="footer-company">Hotshots Airsoft Ltd</p>
-        <p class="footer-meta">&copy; 2026 &nbsp;&middot;&nbsp; Registered in England &amp; Wales &nbsp;&middot;&nbsp; Co. No. 17158689</p>
+        <p>© 2026 Hotshots Airsoft Ltd &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; Company No. 17158689</p>
+        <nav aria-label="Footer navigation">
+          <p style="margin-top:6px">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            &nbsp;·&nbsp;
+            <a href="legal-notice.html">Legal Notice</a>
+          </p>
+        </nav>
       </div>
       <div class="footer-spacer"></div>
     </div>
   </footer>
+
+  <!-- HAMBURGER SCRIPT -->
+  <script>
+    (function () {
+      var btn = document.getElementById('hamburger');
+      var drop = document.getElementById('nav-dropdown');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = btn.classList.toggle('active');
+        drop.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        drop.setAttribute('aria-hidden', !open);
+      });
+      document.addEventListener('click', function (e) {
+        if (!btn.contains(e.target) && !drop.contains(e.target)) {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          btn.classList.remove('active');
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          drop.setAttribute('aria-hidden', 'true');
+          btn.focus();
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
