@@ -70,7 +70,48 @@
 
     /* ── HEADER ── */
 
-    /* ── HEADER ── */
+    /* ── LOGO & HEADER COMPONENTS ── */
+    .ha-wm-ff { font-family: 'Headline Gothic ATF','HeadlineGothicATF','Bebas Neue',serif; }
+    .ha-wm-sp { font-size: 12.14px; letter-spacing: 0em; }
+    .ha-wm-amber { fill: #c8860a; font-size: 24px; letter-spacing: 0em; }
+    .ha-wm-olive { fill: #3d4a2e; font-size: 16px; letter-spacing: 0em; }
+    .ha-wm-bg { fill: #000000; }
+    .logo-home-btn { display: flex; align-items: center; justify-content: center; padding: 8px 10px; border: 2px solid #000000; border-radius: 2px; text-decoration: none; flex-shrink: 0; transition: opacity 0.2s; }
+    .logo-home-btn:hover { opacity: 0.75; }
+    .header-divider { width: 1px; height: 44px; background: rgba(0,0,0,0.25); flex-shrink: 0; margin-left: 4px; }
+
+    /* ── HAMBURGER ── */
+    .hamburger { background: none; border: none; cursor: pointer; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .hamburger span { display: block; height: 2px; background: #000000; border-radius: 1px; transition: width 0.35s cubic-bezier(0.23, 1, 0.32, 1); }
+    .hamburger span:nth-child(1) { width: 24px; }
+    .hamburger span:nth-child(2) { width: 24px; }
+    .hamburger span:nth-child(3) { width: 24px; }
+    .hamburger.active span:nth-child(1) { width: 24px; }
+    .hamburger.active span:nth-child(2) { width: 14px; }
+    .hamburger.active span:nth-child(3) { width: 4px; }
+
+    /* ── NAV DROPDOWN ── */
+    .nav-dropdown { position: absolute; top: calc(100% + 10px); right: 0; background: var(--card); border: 1px solid var(--border); border-top: 2px solid var(--amber); min-width: 160px; border-radius: 2px; opacity: 0; transform: translateY(-6px); pointer-events: none; transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200; }
+    .nav-dropdown.open { opacity: 1; transform: translateY(0); pointer-events: all; }
+    .nav-dropdown a { display: block; padding: 13px 20px; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover, .nav-dropdown a[aria-current="page"] { color: var(--amber); background: rgba(200,134,10,0.05); }
+
+    /* ── ACCESSIBILITY ── */
+    .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 9999; padding: 8px 16px; background: var(--olive); color: var(--smoke); font-family: 'Barlow',Arial,sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .skip-link:focus { left: 8px; }
+
+    /* ── SOCIAL SECTION ── */
+    .social-section { max-width: 560px; margin: 60px auto 0; padding: 0 24px; text-align: center; }
+    .social-label { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--ash); margin-bottom: 20px; }
+    .social-label::before, .social-label::after { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--border); vertical-align: middle; margin: 0 12px; }
+    .social-icons { display: flex; justify-content: center; gap: 16px; }
+    .social-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; color: var(--ash); text-decoration: none; transition: color 0.2s, border-color 0.2s, background 0.2s; }
+    .social-icon:hover { color: var(--amber); border-color: var(--amber); background: rgba(200,134,10,0.06); }
+    .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+    .social-tagline { margin-top: 16px; font-family: 'Barlow', Arial, sans-serif; font-size: 12px; color: var(--ash); letter-spacing: 0.3px; line-height: 1.6; }
+
+        /* ── HEADER ── */
     header {
       position: sticky;
       top: 0;
